@@ -1,0 +1,11 @@
+{
+  "header": {
+    "menu": {
+      "about": "Sobre mí",
+      "projects": "Proyectos",
+      "skills": "Skills",
+      "contact": "Contáctame!"
+    },
+    "theme": "tema"
+  }
+}

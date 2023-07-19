@@ -1,0 +1,11 @@
+{
+  "header": {
+    "menu": {
+      "about": "About Me",
+      "projects": "My Projects",
+      "skills": "Skills",
+      "contact": "Get In Touch"
+    },
+    "theme": "theme"
+  }
+}
