@@ -3,6 +3,7 @@ import MobileHeader from "@/components/MobileHeader"
 
 import { getDictionary } from '../../get-dictionary'
 import { Locale } from '../../i18n-config'
+import Introducing from "@/components/Introducing"
 
 export default async function Home({
     params: { lang },
@@ -16,7 +17,7 @@ export default async function Home({
     <main className="min-h-screen">
       <MobileHeader dictionary={dictionary.header} />
       <Header dictionary={dictionary.header.menu} />
-      Hello world
+      <Introducing dictionary={dictionary.introducing}/>
     </main>
   )
 }

@@ -3,9 +3,13 @@
     "menu": {
       "about": "Sobre mí",
       "projects": "Proyectos",
-      "skills": "Skills",
+      "skills": "Herramientas",
       "contact": "Contáctame!"
-    },
-    "theme": "tema"
+    }
+  },
+  "introducing": {
+    "title": "Hola! Soy Félix Programador Web",
+    "description": "Me divierto programando, creando y sobre todo resolviendo problemas",
+    "button": "Descargar CV"
   }
 }

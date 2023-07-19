@@ -5,7 +5,11 @@
       "projects": "My Projects",
       "skills": "Skills",
       "contact": "Get In Touch"
-    },
-    "theme": "theme"
+    }
+  },
+  "introducing": {
+    "title": "Hi I'm Felix Web Developer",
+    "description": "I enjoy developing, creating & solving problems",
+    "button": "Download Resume"
   }
 }

@@ -6,7 +6,6 @@ import { Switch } from '@headlessui/react'
 
 const ThemeButton = () => {
   const { theme, changeTheme } = useThemeToggle()
-  console.log(theme);
   
   return (
     <div className='flex items-center'>

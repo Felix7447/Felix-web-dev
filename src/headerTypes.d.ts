@@ -5,7 +5,6 @@ export interface Header {
     skills: string
     contact: string
   }
-  theme: string
 }
 
 export interface HeaderMenu {
