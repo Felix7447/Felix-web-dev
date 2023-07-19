@@ -8,12 +8,12 @@ import { HeaderMenu } from '@/headerTypes'
 
 const header = ({ dictionary }: { dictionary: HeaderMenu }) => {
   return (
-    <header className='hidden bg-secondary h-20 py-2 justify-between items-center md:flex'>
+    <header className='hidden dark:bg-secondary bg-main h-20 py-2 justify-between items-center md:flex'>
       <nav className='ml-12'>
-        <ul className='flex items-center gap-4'>
+        <ul className='flex items-center gap-4 text-text'>
           <li>
             <Link href={"/about"}>
-              <figure className='w-8 h-8 bg-main rounded-full'>
+              <figure className='w-8 h-8 dark:bg-main bg-text rounded-full'>
                 {/* <img src="" alt="figure" /> */}
               </figure>
             </Link>

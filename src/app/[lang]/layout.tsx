@@ -19,8 +19,8 @@ export default function RootLayout({
   params: { lang: string }
 }) {
   return (
-    <html lang={params.lang}>
-      <body className='bg-primary text-text'>{children}</body>
+    <html lang={params.lang} className='dark'>
+      <body className='dark:bg-primary dark:text-text bg-text text-primary'>{children}</body>
     </html>
   )
 }

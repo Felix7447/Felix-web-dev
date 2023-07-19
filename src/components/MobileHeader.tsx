@@ -10,7 +10,7 @@ import { Header } from '@/headerTypes'
 const MobileHeader = ({ dictionary }: { dictionary: Header }) => {
 
   return (
-    <header className='relative h-20 px-8 bg-secondary flex justify-between items-center md:hidden'>
+    <header className='relative h-20 px-8 dark:bg-secondary bg-main flex justify-between items-center md:hidden'>
       <BurgerMenu menu={dictionary.menu} />
       <div className='flex items-center gap-4 z-0'>
         <LangDropDown />

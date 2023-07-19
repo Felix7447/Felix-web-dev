@@ -9,7 +9,7 @@ const BurgerMenu = ({ menu } : { menu: HeaderMenu }) => {
     <Menu>
       {({ open }) => (
         <>
-          <Menu.Button className="text-main z-20">
+          <Menu.Button className="dark:text-main text-text z-20">
             {
               open ? 
               (
@@ -34,10 +34,10 @@ const BurgerMenu = ({ menu } : { menu: HeaderMenu }) => {
             leaveFrom="transform scale-100 opacity-100"
             leaveTo="transform scale-95 opacity-0"
           >
-            <Menu.Items static className="w-80 h-screen bg-secondary flex gap-4 flex-col items-center p-20 text-2xl text-text font-bold pt-28">
+            <Menu.Items static className="w-80 h-screen dark:bg-secondary bg-main flex gap-4 flex-col items-center p-20 text-2xl text-text font-bold pt-28">
               <Menu.Item>
                 <Link href={"/"}>
-                  <figure className='w-32 h-32 bg-main rounded-full mb-6'>
+                  <figure className='w-32 h-32 dark:bg-main bg-text rounded-full mb-6'>
                     <img src="" alt="" />
                   </figure>
                 </Link>

@@ -16,6 +16,7 @@ export default async function Home({
     <main className="min-h-screen">
       <MobileHeader dictionary={dictionary.header} />
       <Header dictionary={dictionary.header.menu} />
+      Hello world
     </main>
   )
 }

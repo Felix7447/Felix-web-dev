@@ -21,9 +21,9 @@ const LangDropDawn = () => {
   return (
     <div className='relative'>
       <Listbox value={pathName}>
-        <Listbox.Button className="flex items-center gap-1 text-main uppercase">{pathName.substring(1)}
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-4 h-4">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+        <Listbox.Button className="flex items-center gap-1 dark:text-main text-text uppercase">{pathName.substring(1)}
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
           </svg>
         </Listbox.Button>
         <Transition
@@ -35,10 +35,10 @@ const LangDropDawn = () => {
           leaveFrom="transform scale-100 opacity-100"
           leaveTo="transform scale-95 opacity-0"
         >
-          <Listbox.Options className="bg-primary px-4 py-2 rounded border-main border-2 w-20">
+          <Listbox.Options className="dark:bg-primary bg-main px-4 py-2 rounded dark:border-main border-text border-2 w-20">
             {i18n.locales.map((locale) => (
               <Listbox.Option
-                className="cursor-pointer hover:text-main uppercase"
+                className="cursor-pointer dark:hover:text-main hover:text-secondary text-text uppercase"
                 key={locale}
                 value={redirectedPathName(locale)}
               >
