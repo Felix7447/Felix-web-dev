@@ -15,5 +15,9 @@
   "about": {
     "title": "Sobre Mí",
     "description": "Durante los últimos años he desarrollado diferentes proyectos para mejorar mis habilidades como Programador Frontend, colaborar con compañeros y mucho más. Ahora mi objetivo es ofrecer mis habilidades en desarrollo para satisfacer tus necesidades"
+  },
+  "portfolio": {
+    "title": "Portafolio",
+    "button":"Mostrar Más"
   }
 }

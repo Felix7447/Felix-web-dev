@@ -3,8 +3,10 @@ import MobileHeader from "@/components/MobileHeader"
 
 import { getDictionary } from '../../get-dictionary'
 import { Locale } from '../../i18n-config'
+
 import Introducing from "@/components/Introducing"
 import About from "@/components/About"
+import Portfolio from "@/components/Portfolio"
 
 interface Props {
   params: { lang: Locale }
@@ -19,6 +21,7 @@ const Home: React.FC<Props> = async ({ params: { lang } }) => {
       <Header dictionary={dictionary.header.menu} />
       <Introducing dictionary={dictionary.introducing}/>
       <About dictionary={dictionary.about} />
+      <Portfolio dictionary={dictionary.portfolio} />
     </main>
   )
 }

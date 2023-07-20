@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-const userTheme = localStorage.getItem("theme")
+const userTheme = localStorage?.getItem("theme")
 
 const themeCheck = () => {
   if (!userTheme) {

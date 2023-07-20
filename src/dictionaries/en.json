@@ -15,5 +15,9 @@
   "about": {
     "title": "About Me",
     "description": "Over the recent years I've developed different projects in order to improve my skills as a Frontend Developer, collab with teammates & more. Right now I'm offerring my skills on development to solve your needs"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "button":"Show More"
   }
 }
