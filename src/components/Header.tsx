@@ -11,7 +11,11 @@ import { HeaderMenu } from '@/headerTypes'
 import FigureImage from './FigureImage'
 import image from "@/assets/images/felix-reyna.webp"
 
-const header = ({ dictionary }: { dictionary: HeaderMenu }) => {
+interface Props {
+  dictionary: HeaderMenu
+}
+
+const header: React.FC<Props> = ({ dictionary }) => {
   const pathname = usePathname()
   
   return (
@@ -24,22 +28,22 @@ const header = ({ dictionary }: { dictionary: HeaderMenu }) => {
             </Link>
           </li>
           <li>
-            <Link href={`${pathname}/#About`}>
+            <Link href={`${pathname}/#About`} className='dark:hover:text-main'>
               {dictionary.about}
             </Link>
           </li>
           <li>
-            <Link href={`${pathname}`}>
+            <Link href={`${pathname}`} className='dark:hover:text-main'>
               {dictionary.projects}
             </Link>
           </li>
           <li>
-            <Link href={`${pathname}`}>
+            <Link href={`${pathname}`} className='dark:hover:text-main'>
               {dictionary.skills}
             </Link>
           </li>
           <li>
-            <Link href={`${pathname}`}>
+            <Link href={`${pathname}`} className='dark:hover:text-main'>
               {dictionary.contact}
             </Link>
           </li>

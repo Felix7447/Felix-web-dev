@@ -1,16 +1,14 @@
 import React from 'react'
 import useThemeToggle from '@/hooks/useThemeToggle'
 
-import { useState } from 'react'
 import { Switch } from '@headlessui/react'
 
-const ThemeButton = () => {
+const ThemeButton: React.FC = () => {
   const { theme, changeTheme } = useThemeToggle()
   
   return (
     <div className='flex items-center'>
       <Switch
-        // checked={enabled}
         onClick={changeTheme}
         className={`${theme === "dark" ? 'bg-teal-900' : 'bg-teal-700'}
           relative inline-flex h-8 w-14 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
@@ -34,7 +32,6 @@ const ThemeButton = () => {
                 </svg>
               )
           }
-          
         </span>
       </Switch>
     </div>

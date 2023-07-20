@@ -8,7 +8,7 @@ import { i18n } from '../i18n-config'
 
 import "/node_modules/flag-icons/css/flag-icons.min.css"
 
-const LangDropDawn = () => {
+const LangDropDawn: React.FC = () => {
   const pathName = usePathname()
   
   const redirectedPathName = (locale: string) => {

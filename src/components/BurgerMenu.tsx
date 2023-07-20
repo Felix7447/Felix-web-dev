@@ -12,7 +12,11 @@ import { HeaderMenu } from '@/headerTypes'
 import image from "@/assets/images/felix-reyna.webp"
 import FigureImage from './FigureImage';
 
-const BurgerMenu = ({ menu } : { menu: HeaderMenu }) => {
+interface Props {
+  menu: HeaderMenu
+}
+
+const BurgerMenu: React.FC<Props> = ({ menu }) => {
   const disableBodyScroll = bodyScrollLock.disableBodyScroll;
   const enableBodyScroll = bodyScrollLock.enableBodyScroll;
 

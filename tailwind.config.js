@@ -19,6 +19,9 @@ module.exports = {
         main: "#00ADB5",
         text: "#EEEEEE",
       },
+      backgroundImage: {
+        "coding-man-desk": "url('/public/coding-man_desktop.webp')",
+      },
     },
   },
   plugins: [],

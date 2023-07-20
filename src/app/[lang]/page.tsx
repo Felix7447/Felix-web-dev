@@ -4,13 +4,13 @@ import MobileHeader from "@/components/MobileHeader"
 import { getDictionary } from '../../get-dictionary'
 import { Locale } from '../../i18n-config'
 import Introducing from "@/components/Introducing"
+import About from "@/components/About"
 
-export default async function Home({
-    params: { lang },
-  }: {
-    params: { lang: Locale }
-  }) 
-  {
+interface Props {
+  params: { lang: Locale }
+}
+
+const Home: React.FC<Props> = async ({ params: { lang } }) => {
   const dictionary = await getDictionary(lang)
 
   return (
@@ -18,6 +18,9 @@ export default async function Home({
       <MobileHeader dictionary={dictionary.header} />
       <Header dictionary={dictionary.header.menu} />
       <Introducing dictionary={dictionary.introducing}/>
+      <About dictionary={dictionary.about} />
     </main>
   )
 }
+
+export default Home

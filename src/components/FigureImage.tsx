@@ -1,11 +1,13 @@
 import React from 'react'
 import Image from 'next/image'
 
-const FigureImage = ({ size = 32, image, scale = 110 }: {
+interface Props {
   size?: number,
   image: string,
   scale?: number
-}) => {
+}
+
+const FigureImage: React.FC<Props> = ({ size = 32, image, scale = 110 }) => {
   return (
     <figure className={`relative flex justify-center items-center w-${size} h-${size} dark:bg-main bg-text rounded-full`}>
       <Image 
