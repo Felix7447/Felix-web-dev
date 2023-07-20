@@ -19,7 +19,7 @@ const header: React.FC<Props> = ({ dictionary }) => {
   const pathname = usePathname()
   
   return (
-    <header className='hidden sticky top-0 dark:bg-secondary bg-main h-20 py-2 justify-between items-center md:flex'>
+    <header className='hidden z-20 sticky top-0 dark:bg-secondary bg-main h-20 py-2 justify-between items-center md:flex'>
       <nav className='ml-12'>
         <ul className='flex items-center gap-4 text-text'>
           <li>
