@@ -5,7 +5,7 @@ import BurgerMenu from './BurgerMenu'
 import LangDropDown from './LangDropDown'
 import ThemeButton from './ThemeButton'
 
-import { Header } from '@/headerTypes'
+import { Header } from '@/types/headerTypes'
 
 const MobileHeader = ({ dictionary }: { dictionary: Header }) => (
   <header className='sticky top-0 z-20 h-20 px-8 dark:bg-secondary bg-main flex justify-between items-center md:hidden'>

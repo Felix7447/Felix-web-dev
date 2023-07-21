@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation'
 import LangDropDown from './LangDropDown'
 import ThemeButton from './ThemeButton'
 
-import { HeaderMenu } from '@/headerTypes'
+import { HeaderMenu } from '@/types/headerTypes'
 
 import FigureImage from './FigureImage'
 import image from "@/assets/images/felix-reyna.webp"

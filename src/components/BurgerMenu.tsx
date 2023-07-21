@@ -7,7 +7,7 @@ import { usePathname } from 'next/navigation';
 const bodyScrollLock = require('body-scroll-lock');
 
 import { Menu, Transition } from '@headlessui/react'
-import { HeaderMenu } from '@/headerTypes'
+import { HeaderMenu } from '@/types/headerTypes'
 
 import image from "@/assets/images/felix-reyna.webp"
 import FigureImage from './FigureImage';

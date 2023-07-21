@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 import Typed from 'typed.js'
 
-import { Introducing } from '@/introducingTypes'
+import { Introducing } from '@/types/introducingTypes'
 
 import bgImage from "@/assets/images/coding-man_desktop.webp"
 

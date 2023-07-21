@@ -19,5 +19,18 @@
   "portfolio": {
     "title": "Portafolio",
     "button":"Mostrar Más"
+  },
+  "skills": {
+    "html": "HTML",
+    "css": "CSS",
+    "sass": "Sass",
+    "tailwind": "Tailwind",
+    "javaScript": "JavaScript",
+    "typeScript": "TypeScript",
+    "react": "React",
+    "nextjs": "NextJS",
+    "webpack": "Webpack",
+    "vite": "Vite",
+    "shopify": "Shopify"
   }
 }

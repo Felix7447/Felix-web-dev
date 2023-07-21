@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import { Portfolio } from '@/portfolioTypes'
+import { Portfolio } from '@/types/portfolioTypes'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';

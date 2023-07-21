@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 import image from "@/assets/images/felix-reyna.webp"
 
-import { About } from '@/aboutTypes'
+import { About } from '@/types/aboutTypes'
 
 const About = ({ dictionary }: { dictionary: About }) => {
   return (
