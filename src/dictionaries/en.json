@@ -33,5 +33,30 @@
     "webpack": "Webpack",
     "vite": "Vite",
     "shopify": "Shopify"
+  },
+  "contact": {
+    "title": "Get In Touch!",
+    "description": "Hi! If you want I help you with your Web Site feel free to text me!, so please ",
+    "email": "Send Me An E-mail"
+  },
+  "footer": {
+    "title": "Do you want to know more about me?",
+    "description": "I have a BE in Telecommunications Engineering & currently I'm an university professor, My passion for IT has made me explore into different areas. Until now my favorite one is Web Development.",
+    "explore": "Explore",
+    "links": {
+      "about": "About Me",
+      "projects": "My Projects",
+      "skills": "Skills",
+      "contact": "Get In Touch"
+    },
+    "data": "Address",
+    "dataDescription": "I Live in Valencia, Carabobo, Venezuela. My E-Mail: felixreyna48@gmail.com",
+    "email":"Send Me An E-mail",
+    "form": {
+      "address": "Your E-Mail Address",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send"
+    }
   }
 }

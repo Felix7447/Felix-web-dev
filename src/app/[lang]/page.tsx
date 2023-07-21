@@ -26,8 +26,8 @@ const Home: React.FC<Props> = async ({ params: { lang } }) => {
       <About dictionary={dictionary.about} />
       <Portfolio dictionary={dictionary.portfolio} />
       <SkillsSection dictionary={dictionary.skills} />
-      <Contact />
-      <Footer />
+      <Contact dictionary={dictionary.contact} />
+      <Footer dictionary={dictionary.footer} />
     </main>
   )
 }

@@ -33,5 +33,30 @@
     "webpack": "Webpack",
     "vite": "Vite",
     "shopify": "Shopify"
+  },
+  "contact": {
+    "title": "Contáctame!",
+    "description": "¡Hola! Si quieres que te ayude con tu sitio web no dudes en contactarme, así que por favor ",
+    "email": "Envíame un E-mail"
+  },
+  "footer": {
+    "title": "¿Quieres saber más de mi?",
+    "description": "Soy Ing. Telecomunicaciones y actualmente soy profesor universitario, mi pasión por la tecnología me ha permitido explorar distintos ámbitos y hasta ahora mi favorito es el desarrollo web.",
+    "explore": "Explorar",
+    "links": {
+      "about": "Sobre mí",
+      "projects": "Proyectos",
+      "skills": "Herramientas",
+      "contact": "Contáctame!"
+    },
+    "data": "Dirección",
+    "dataDescription": "Resido en Valencia, Carabobo, Venezuela. Mi Email: felixreyna48@gmail.com",
+    "email":"Envíame un E-mail",
+    "form": {
+      "address": "Tu dirección de correo",
+      "subject": "Asunto",
+      "message": "Mensaje",
+      "send": "Enviar"
+    }
   }
 }
