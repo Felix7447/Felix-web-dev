@@ -11,7 +11,7 @@ import { Skills } from '@/types/skillsTypes';
 const SkillsSection = ({ dictionary }: { dictionary: Skills }) => {
   return (
     <section className='h-[50vh] py-10 dark:bg-primary bg-text dark:text-text text-primary'>
-      <h1 className='text-3xl my-8 text-center font-bold dark:text-main'>Skills</h1>
+      <h1 className='text-3xl my-8 text-center font-bold dark:text-main'>{dictionary.title}</h1>
       <Swiper spaceBetween={80} slidesPerView={'auto'} loop={true} className='!px-8 md:!px-16 !my-8 !text-center md:!hidden'>
         <SwiperSlide>
           <figure className='h-20 bg-main'>

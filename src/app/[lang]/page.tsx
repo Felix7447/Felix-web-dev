@@ -8,6 +8,8 @@ import Introducing from "@/components/Introducing"
 import About from "@/components/About"
 import Portfolio from "@/components/Portfolio"
 import SkillsSection from "@/components/SkillsSection"
+import Contact from "@/components/Contact"
+import Footer from "@/components/Footer"
 
 interface Props {
   params: { lang: Locale }
@@ -24,6 +26,8 @@ const Home: React.FC<Props> = async ({ params: { lang } }) => {
       <About dictionary={dictionary.about} />
       <Portfolio dictionary={dictionary.portfolio} />
       <SkillsSection dictionary={dictionary.skills} />
+      <Contact />
+      <Footer />
     </main>
   )
 }

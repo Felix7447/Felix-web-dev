@@ -21,6 +21,7 @@
     "button":"Mostrar Más"
   },
   "skills": {
+    "title": "Herramientas",
     "html": "HTML",
     "css": "CSS",
     "sass": "Sass",

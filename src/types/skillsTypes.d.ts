@@ -1,4 +1,5 @@
 export interface Skills {
+  title: string,
   html: string,
   css: string,
   sass: string,
