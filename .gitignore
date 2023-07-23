@@ -35,5 +35,5 @@ yarn-error.log*
 next-env.d.ts
 
 # Files
-assets/icons/*
+assets/icons/*.png
 assets/images/*

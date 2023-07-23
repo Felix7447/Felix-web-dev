@@ -15,7 +15,7 @@ const Contact = ({ dictionary }: { dictionary: Contact }) => {
         </aside>
         <p className='col-span-12 px-4 text-center md:col-span-8 md:flex md:flex-col md:justify-center md:text-start md:text-2xl lg:col-start-3 lg:col-end-8'>
           {dictionary.description}
-          <Link href={'/'} className='inline dark:text-main text-secondary'>{dictionary.email}</Link>
+          <Link href={'/'} className='inline dark:text-main text-primary'>{dictionary.email}</Link>
         </p>
       </main>
     </section>
