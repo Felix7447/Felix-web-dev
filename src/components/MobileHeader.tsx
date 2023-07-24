@@ -1,4 +1,4 @@
-"use client"
+// "use client"
 import React from 'react'
 
 import BurgerMenu from './BurgerMenu'
@@ -8,7 +8,7 @@ import ThemeButton from './ThemeButton'
 import { Header } from '@/types/headerTypes'
 
 const MobileHeader = ({ dictionary }: { dictionary: Header }) => (
-  <header className='sticky top-0 z-20 h-20 px-8 dark:bg-secondary bg-main flex justify-between items-center md:hidden'>
+  <header className='sticky top-[-1px] z-20 h-20 px-8 dark:bg-secondary bg-main flex justify-between items-center md:hidden'>
     <BurgerMenu menu={dictionary.menu} />
     <div className='flex items-center gap-4 z-0'>
       <LangDropDown />

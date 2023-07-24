@@ -28,24 +28,24 @@ const Header: React.FC<Props> = ({ dictionary }) => {
             </Link>
           </li>
           <li>
-            <Link href={`${pathname}/#About`} className='dark:hover:text-main'>
+            <a href={`#about`} className='dark:hover:text-main'>
               {dictionary.about}
-            </Link>
+            </a>
           </li>
           <li>
-            <Link href={`${pathname}`} className='dark:hover:text-main'>
+            <a href={`#projects`} className='dark:hover:text-main'>
               {dictionary.projects}
-            </Link>
+            </a>
           </li>
           <li>
-            <Link href={`${pathname}`} className='dark:hover:text-main'>
+            <a href={`#skills`} className='dark:hover:text-main'>
               {dictionary.skills}
-            </Link>
+            </a>
           </li>
           <li>
-            <Link href={`${pathname}`} className='dark:hover:text-main'>
+            <a href={`#contact`} className='dark:hover:text-main'>
               {dictionary.contact}
-            </Link>
+            </a>
           </li>
         </ul>
       </nav>

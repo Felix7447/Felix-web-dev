@@ -6,7 +6,7 @@ import { Contact } from '@/types/contactTypes'
 
 const Contact = ({ dictionary }: { dictionary: Contact }) => {
   return (
-    <section className='py-10 dark:bg-secondary bg-main text-text'>
+    <section id='contact' className='py-10 dark:bg-secondary bg-main text-text'>
       <h1 className='text-3xl my-8 dark:text-main text-center font-bold'>
         {dictionary.title}
       </h1>

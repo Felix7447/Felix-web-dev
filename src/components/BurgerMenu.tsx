@@ -1,7 +1,6 @@
 "use client"
-import React, { useState } from 'react'
+import React from 'react'
 import Link from 'next/link'
-import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 const bodyScrollLock = require('body-scroll-lock');
@@ -60,24 +59,24 @@ const BurgerMenu: React.FC<Props> = ({ menu }) => {
                   </Link>
                 </Menu.Item>
                 <Menu.Item>
-                  <Link href={`${pathname}/`}>
+                  <a href={`#about`}>
                     {menu.about}
-                  </Link>
+                  </a>
                 </Menu.Item>
                 <Menu.Item>
-                  <Link href={`${pathname}/`}>
+                  <a href={`#projects`}>
                     {menu.projects}
-                  </Link>
+                  </a>
                 </Menu.Item>
                 <Menu.Item>
-                  <Link href={`${pathname}/`}>
+                  <a href={`#skills`}>
                     {menu.skills}
-                  </Link>
+                  </a>
                 </Menu.Item>
                 <Menu.Item>
-                  <Link href={`${pathname}/`}>
+                  <a href={`#contact`}>
                     {menu.contact}
-                  </Link>
+                  </a>
                 </Menu.Item>
               </Menu.Items>
             </Transition>

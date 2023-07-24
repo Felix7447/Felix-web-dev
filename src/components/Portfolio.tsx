@@ -17,7 +17,7 @@ interface Props {
 const Portfolio: React.FC<Props> = ({ dictionary }) => {
   const pathname = usePathname()
   return (
-    <section className='dark:bg-secondary bg-main py-10'>
+    <section id='projects' className='dark:bg-secondary bg-main py-10'>
       <h1 className='dark:text-main text-text text-3xl md:text-5xl text-center font-bold'>
         {dictionary.title}
       </h1>

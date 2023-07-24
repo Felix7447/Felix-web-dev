@@ -7,7 +7,7 @@ import { About } from '@/types/aboutTypes'
 
 const About = ({ dictionary }: { dictionary: About }) => {
   return (
-    <section className='grid grid-cols-12 min-h-screen dark:bg-primary bg-text py-10 px-8 lg:px-28 text-center'>
+    <section id='about' className='grid grid-cols-12 min-h-screen dark:bg-primary bg-text py-10 px-8 lg:px-28 text-center'>
       <h1 className='col-span-12 self-center text-3xl dark:text-text text-secondary my-2 font-bold md:text-5xl'>
         {dictionary.title}
       </h1>

@@ -2,6 +2,9 @@ import React from 'react'
 import Link from 'next/link'
 import Footer from '@/types/footerTypes'
 import EmailForm from './EmailForm'
+import GmailIcon from '@/assets/icons/GmailIcon'
+import LinkedinIcon from '@/assets/icons/LinkedinIcon'
+import GithubIcon from '@/assets/icons/GithubIcon'
 
 const Footer = ({ dictionary }: { dictionary: Footer }) => {
   return (
@@ -32,11 +35,22 @@ const Footer = ({ dictionary }: { dictionary: Footer }) => {
         <p className='text-lg md:text-xl'>
           {dictionary.dataDescription}
         </p>
-        <div className="flex justify-around my-4 md:my-8">
-          <figure className='w-12 h-12 bg-primary'></figure>
-          <figure className='w-12 h-12 bg-primary'></figure>
-          <figure className='w-12 h-12 bg-primary'></figure>
-          <figure className='w-12 h-12 bg-primary'></figure>
+        <div className="flex justify-start gap-10 my-4 md:my-8">
+          <figure className='w-16 h-16 rounded-md flex justify-center items-center bg-primary'>
+            <Link href={`mailto:felixreyna48@gmail.com`}>
+              <GmailIcon />
+            </Link>
+          </figure>
+          <figure className='w-16 h-16 rounded-md flex justify-center items-center bg-primary'>
+            <Link href={`https://www.linkedin.com/in/felix-reyna/`} target='_blank'>
+              <LinkedinIcon />
+            </Link>
+          </figure>
+          <figure className='w-16 h-16 rounded-md flex justify-center items-center bg-primary'>
+            <Link href={`https://github.com/Felix7447`} target='_blank'>
+              <GithubIcon />
+            </Link>
+          </figure>
         </div>
       </aside>
       <aside className='col-span-12 my-4 md:col-span-6 md:px-8'>

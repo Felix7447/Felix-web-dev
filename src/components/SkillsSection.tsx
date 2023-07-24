@@ -21,12 +21,11 @@ import ReactIcon from '@/assets/icons/ReactIcon';
 import NextIcon from '@/assets/icons/NextIcon';
 import WebpackIcon from '@/assets/icons/WebpackIcon';
 import ShopifyIcon from '@/assets/icons/ShopifyIcon';
-import vite from "@/assets/icons/vite.png"
 import ViteIcon from '@/assets/icons/ViteIcon';
 
 const SkillsSection = ({ dictionary }: { dictionary: Skills }) => {
   return (
-    <section className='h-[50vh] py-10 dark:bg-primary bg-text dark:text-text text-primary'>
+    <section id='skills' className='h-[50vh] py-10 dark:bg-primary bg-text dark:text-text text-primary'>
       <h1 className='text-3xl my-8 text-center font-bold dark:text-main'>{dictionary.title}</h1>
       <Swiper modules={[Autoplay]} spaceBetween={80} slidesPerView={'auto'} autoplay={{delay: 1500}} loop={true} breakpoints={{ 768: { slidesPerView: 3, autoplay: { delay: 2000 } }}} className='!px-8 md:!px-16 !my-8 !text-center'>
         <SwiperSlide>
