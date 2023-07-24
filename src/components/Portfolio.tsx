@@ -1,5 +1,8 @@
 "use client"
 import React from 'react'
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+
 import { Portfolio } from '@/types/portfolioTypes'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -7,7 +10,12 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-const Portfolio = ({ dictionary }: { dictionary: Portfolio }) => {
+interface Props {
+  dictionary: Portfolio
+}
+
+const Portfolio: React.FC<Props> = ({ dictionary }) => {
+  const pathname = usePathname()
   return (
     <section className='dark:bg-secondary bg-main py-10'>
       <h1 className='dark:text-main text-text text-3xl md:text-5xl text-center font-bold'>
@@ -39,7 +47,7 @@ const Portfolio = ({ dictionary }: { dictionary: Portfolio }) => {
         <figure className='col-span-4 md:h-[45vh] lg:h-[65vh] dark:bg-main bg-text'></figure>
       </main>
       <footer className='w-full flex justify-center my-8'>
-        <button className='p-4 dark:bg-main bg-text dark:text-text text-primary '>{dictionary.button}</button>
+        <Link href={`${pathname}/portfolio`} className='p-4 dark:bg-main bg-text dark:text-text text-primary' >{dictionary.button}</Link>
       </footer>
     </section>
   )

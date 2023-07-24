@@ -55,7 +55,7 @@ const BurgerMenu: React.FC<Props> = ({ menu }) => {
             >
               <Menu.Items static className="w-80 h-screen dark:bg-secondary bg-main flex gap-4 flex-col items-center p-20 text-2xl text-text font-bold pt-28">
                 <Menu.Item>
-                  <Link href={`${pathname}/`} className='flex justify-center items-center'>
+                  <Link href={`/`} className='flex justify-center items-center'>
                     <FigureImage image={image.src}/>
                   </Link>
                 </Menu.Item>

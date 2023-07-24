@@ -15,7 +15,7 @@ interface Props {
   dictionary: HeaderMenu
 }
 
-const header: React.FC<Props> = ({ dictionary }) => {
+const Header: React.FC<Props> = ({ dictionary }) => {
   const pathname = usePathname()
   
   return (
@@ -23,7 +23,7 @@ const header: React.FC<Props> = ({ dictionary }) => {
       <nav className='ml-12'>
         <ul className='flex items-center gap-4 text-text'>
           <li>
-            <Link href={`${pathname}`}>
+            <Link href={`/`}>
               <FigureImage size={8} image={image.src} scale={90} />
             </Link>
           </li>
@@ -57,4 +57,4 @@ const header: React.FC<Props> = ({ dictionary }) => {
   )
 }
 
-export default header
+export default Header
