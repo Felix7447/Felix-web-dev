@@ -62,7 +62,7 @@ const Portfolio: React.FC<Props> = ({ dictionary }) => {
       <main className='hidden md:grid grid-cols-12 gap-4 px-16 my-8'>
         {
           projects.slice(0, 6).map((project: Project) => (
-            <ProjectCard image={project.mainImage} title={project.name} icons={project.techStack} link={project.link} />
+            <ProjectCard key={`projectSection-${project.name}`} dictionary={dictionary} image={project.mainImage} title={project.name} icons={project.techStack} link={project.link} />
           ))
         }
       </main>

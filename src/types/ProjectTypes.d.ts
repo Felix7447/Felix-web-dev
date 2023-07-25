@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image"
+
 export default interface Project {
   name: string
   mainImage: StaticImageData

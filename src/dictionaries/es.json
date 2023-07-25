@@ -18,6 +18,9 @@
   },
   "portfolio": {
     "title": "Portafolio",
+    "techStack": "Tecnologías",
+    "details": "Detalles",
+    "watchLive": "Ver Sitio",
     "button":"Mostrar Más"
   },
   "skills": {

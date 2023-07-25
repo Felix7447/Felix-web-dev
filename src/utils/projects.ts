@@ -20,6 +20,10 @@ import ShopifyIcon from "@/assets/icons/ShopifyIcon"
 import CssIcon from "@/assets/icons/CssIcon"
 import WebpackIcon from "@/assets/icons/WebpackIcon"
 import HtmlIcon from "@/assets/icons/HtmlIcon"
+import VueIcon from "@/assets/icons/VueIcon"
+import VuetifyIcon from "@/assets/icons/VuetifyIcon"
+import StyledComponentsIcon from "@/assets/icons/StyledComponentsIcon"
+import GraphQlIcon from "@/assets/icons/GraphQlIcon"
 
 const projects: Project[] = [
   {
@@ -30,16 +34,16 @@ const projects: Project[] = [
     link: "https://petvet-two.vercel.app/"
   },
   {
-    name: "Bambina Agenda",
+    name: "Bambina Agenda (Collab)",
     mainImage: bambinaImage,
-    techStack: [JavaScriptIcon],
+    techStack: [VueIcon, VuetifyIcon, JavaScriptIcon],
     button: "bambina",
     link: "disabled"
   },
   {
     name: "Figram",
     mainImage: figramImage,
-    techStack: [ReactIcon, SassIcon, JavaScriptIcon, ViteIcon],
+    techStack: [ReactIcon, StyledComponentsIcon, GraphQlIcon, ViteIcon, JavaScriptIcon],
     button: "figram",
     link: "https://figram-five.vercel.app/"
   },
