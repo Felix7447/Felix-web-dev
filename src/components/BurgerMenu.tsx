@@ -1,5 +1,5 @@
 "use client"
-import React from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation';
 
@@ -9,7 +9,9 @@ import { Menu, Transition } from '@headlessui/react'
 import { HeaderMenu } from '@/types/headerTypes'
 
 import image from "@/assets/images/felix-reyna.webp"
-import FigureImage from './FigureImage';
+
+import FigureImage from './FigureImage'
+import MenuLink from './MenuLink';
 
 interface Props {
   menu: HeaderMenu
@@ -21,15 +23,40 @@ const BurgerMenu: React.FC<Props> = ({ menu }) => {
 
   const pathname = usePathname()
 
+  const mainMenu = [
+    {
+      link: "#about",
+      text: menu.about
+    }, 
+    {
+      link: "#projects",
+      text: menu.projects
+    },
+    {
+      link: "#skills",
+      text: menu.skills
+    },
+    {
+      link: "#contact",
+      text: menu.contact
+    }
+  ]
+
+  const [customOpen, setCustomOpen] = useState(false)
+
+  const handleMenu = () => {
+    setCustomOpen(!customOpen)
+  }
+
   return (
     <Menu>
-      {({ open }) => { 
-        open ? disableBodyScroll(window) : enableBodyScroll(window)
+      {({ open }) => {
+        customOpen ? disableBodyScroll(window) : enableBodyScroll(window)
         return (
           <>
-            <Menu.Button className="dark:text-main text-text z-20 overflow-hidden">
+            <Menu.Button className="dark:text-main text-text z-20 overflow-hidden" onClick={handleMenu}>
               {
-                open ? 
+                customOpen ? 
                 (
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-9 h-9">
                     <path fillRule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clipRule="evenodd" />
@@ -43,7 +70,7 @@ const BurgerMenu: React.FC<Props> = ({ menu }) => {
               }
             </Menu.Button>
             <Transition
-              show={open}
+              show={customOpen}
               className="absolute top-0 left-0 z-10"
               enter="transition duration-100 ease-out"
               enterFrom="transform scale-95 opacity-0"
@@ -58,26 +85,13 @@ const BurgerMenu: React.FC<Props> = ({ menu }) => {
                     <FigureImage image={image.src}/>
                   </Link>
                 </Menu.Item>
-                <Menu.Item>
-                  <a href={`#about`}>
-                    {menu.about}
-                  </a>
-                </Menu.Item>
-                <Menu.Item>
-                  <a href={`#projects`}>
-                    {menu.projects}
-                  </a>
-                </Menu.Item>
-                <Menu.Item>
-                  <a href={`#skills`}>
-                    {menu.skills}
-                  </a>
-                </Menu.Item>
-                <Menu.Item>
-                  <a href={`#contact`}>
-                    {menu.contact}
-                  </a>
-                </Menu.Item>
+                {
+                  ((pathname.length <= 3) ) && mainMenu.map((item) => (
+                    <Menu.Item key={`item-${item.link}`}>
+                      <MenuLink link={item.link} text={item.text} handleMenu={handleMenu} />
+                    </Menu.Item>
+                  ))
+                }
               </Menu.Items>
             </Transition>
           </>

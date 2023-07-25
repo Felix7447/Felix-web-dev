@@ -16,6 +16,7 @@ const FigureImage: React.FC<Props> = ({ size = 32, image, scale = 110 }) => {
         alt="Felix Reyna"
         width={100}
         height={100}
+        priority
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
       />
     </figure>
