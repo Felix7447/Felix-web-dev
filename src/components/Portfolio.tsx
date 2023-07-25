@@ -14,6 +14,7 @@ import 'swiper/css/pagination';
 import projects from '@/utils/projects';
 import ProjectCard from './ProjectCard';
 import Project from '@/types/ProjectTypes';
+import ProjectSlider from './ProjectSlider';
 
 interface Props {
   dictionary: Portfolio
@@ -27,37 +28,13 @@ const Portfolio: React.FC<Props> = ({ dictionary }) => {
         {dictionary.title}
       </h1>
       <Swiper spaceBetween={50} className='!px-16 md:!hidden'>
-        <SwiperSlide>
-          <figure className='relative h-80 my-6 dark:bg-main bg-text'>
-            <Image src={"/hello.png"} alt="Slide" fill />
-            <aside className='absolute bottom-0 w-full px-4 border-2 border-red-500'>
-              <h1 className='font-bold'>Title</h1>
-              <div>
-                <h3>Tech stack</h3>
-                <div className='flex'>
-                  <span>icon</span>
-                  <span>icon</span>
-                  <span>icon</span>
-                  <span>icon</span>
-                </div>
-              </div>
-              <div className='flex justify-around'>
-                <button>button</button>
-                <button>button</button>
-              </div>
-            </aside>
-          </figure>
-        </SwiperSlide>
-        <SwiperSlide>
-          <figure className='h-80 my-6 dark:bg-main bg-text'>
-            Slide 2
-          </figure>
-        </SwiperSlide>
-        <SwiperSlide>
-          <figure className='h-80 my-6 dark:bg-main bg-text'>
-            Slide 3
-          </figure>
-        </SwiperSlide>
+        {
+          projects.slice(0, 6).map((project: Project) => (
+            <SwiperSlide>
+              <ProjectSlider key={`projectSection-${project.name}`} dictionary={dictionary} image={project.mainImage} title={project.name} icons={project.techStack} link={project.link} />
+            </SwiperSlide>
+          ))
+        }
       </Swiper>
       <main className='hidden md:grid grid-cols-12 gap-4 px-16 my-8'>
         {
