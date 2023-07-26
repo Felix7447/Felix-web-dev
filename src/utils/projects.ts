@@ -27,53 +27,59 @@ import GraphQlIcon from "@/assets/icons/GraphQlIcon"
 
 const projects: Project[] = [
   {
-    name: "Petvet",
+    name: "petvet",
     mainImage: petvetImage,
+    images: [petvetImage],
     techStack: [NextIcon, TailwindIcon, JavaScriptIcon],
-    button: "petvet",
-    link: "https://petvet-two.vercel.app/"
+    link: "https://petvet-two.vercel.app/",
+    githubLink: "https://github.com/Felix7447/petvet"
   },
   {
-    name: "Bambina Agenda (Collab)",
+    name: "bambina agenda (collab)",
     mainImage: bambinaImage,
+    images: [bambinaImage],
     techStack: [VueIcon, VuetifyIcon, JavaScriptIcon],
-    button: "bambina",
-    link: "disabled"
+    link: "disabled",
   },
   {
-    name: "Figram",
+    name: "figram",
     mainImage: figramImage,
+    images: [figramImage],
     techStack: [ReactIcon, StyledComponentsIcon, GraphQlIcon, ViteIcon, JavaScriptIcon],
-    button: "figram",
-    link: "https://figram-five.vercel.app/"
+    link: "https://figram-five.vercel.app/",
+    githubLink: "https://github.com/Felix7447/Figram"
   },
   {
-    name: "Figuitars",
+    name: "figuitars",
     mainImage: figuitarsImage,
+    images: [figuitarsImage],
     techStack: [ShopifyIcon, CssIcon, JavaScriptIcon],
-    button: "figuitars",
-    link: "https://fi-guitars.myshopify.com/"
+    link: "https://fi-guitars.myshopify.com/",
+    githubLink: "https://github.com/Felix7447/petvet"
   },
   {
-    name: "My Star Wars Site",
+    name: "my star wars site",
     mainImage: starwarsImage,
+    images: [starwarsImage],
     techStack: [JavaScriptIcon, SassIcon, WebpackIcon],
-    button: "figuitars",
-    link: "http://my-star-wars-site.vercel.app/"
+    link: "http://my-star-wars-site.vercel.app/",
+    githubLink: "https://github.com/Felix7447/My-star-wars-site"
   },
   {
-    name: "FiTimer",
+    name: "fiTimer",
     mainImage: fitimerImage,
+    images: [fitimerImage],
     techStack: [JavaScriptIcon, SassIcon, WebpackIcon, HtmlIcon],
-    button: "fitimer",
-    link: "https://timer-felix7447.vercel.app/"
+    link: "https://timer-felix7447.vercel.app/",
+    githubLink: "https://github.com/Felix7447/Timer"
   },
   {
-    name: "Paint It",
+    name: "paint It",
     mainImage: paintitImage,
+    images: [paintitImage],
     techStack: [JavaScriptIcon, SassIcon, WebpackIcon, HtmlIcon],
-    button: "paintit",
-    link: "http://my-paint.vercel.app/"
+    link: "http://my-paint.vercel.app/",
+    githubLink: "https://github.com/Felix7447/My-Paint"
   },
 ]
 

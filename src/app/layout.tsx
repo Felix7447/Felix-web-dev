@@ -1,6 +1,6 @@
-import './globals.css'
+import './[lang]/globals.css'
 import type { Metadata } from 'next'
-import { i18n } from '../../i18n-config'
+import { i18n } from '../i18n-config'
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }))

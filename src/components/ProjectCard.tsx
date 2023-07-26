@@ -2,13 +2,14 @@ import React from 'react'
 import Image, { StaticImageData } from 'next/image'
 import Link from 'next/link'
 import { Portfolio } from '@/types/portfolioTypes'
+import { Url } from 'next/dist/shared/lib/router/router'
 
 interface Props {
   dictionary: Portfolio
   image: StaticImageData
   title: string
   icons: (() => React.JSX.Element)[]
-  link?: any
+  link: Url
 }
 
 const ProjectCard: React.FC<Props> = ({ dictionary, image, title, icons, link }) => {  
@@ -38,7 +39,7 @@ const ProjectCard: React.FC<Props> = ({ dictionary, image, title, icons, link })
             </div>
           </div>
           <div className='relative flex justify-around text-text mt-2'>
-            <Link href={""} className='w-[45%] p-4 bg-primary text-center text-xl'>{dictionary.details}</Link>
+            <Link href={`/project/${title}`} className='w-[45%] p-4 bg-primary text-center text-xl'>{dictionary.details}</Link>
             {
               link === 'disabled' ?
                 <button className='w-[45%] p-4 bg-gray-500 text-primary text-center text-xl cursor-auto'>{dictionary.watchLive}</button>

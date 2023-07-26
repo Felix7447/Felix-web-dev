@@ -21,7 +21,65 @@
     "techStack": "Tecnologías",
     "details": "Detalles",
     "watchLive": "Ver Sitio",
-    "button":"Mostrar Más"
+    "button":"Mostrar Más",
+    "projects": {
+      "petvet": {
+        "title": "petvet",
+        "short_description": "petvet desc corta",
+        "github": "Mira este proyecto en GitHub",
+        "description": "petvet description",
+        "author": "Felix Reyna",
+        "collab": "none"
+      },
+      "bambina": {
+        "title": "Bambina",
+        "short_description": "Bambina desc corta",
+        "github": "Mira este proyecto en GitHub",
+        "description": "Bambina description",
+        "author": "Shakira Contreras",
+        "collab": "Felix Reyna"
+      },
+      "figram": {
+        "title": "figram",
+        "short_description": "Figram desc corta",
+        "github": "Mira este proyecto en GitHub",
+        "description": "Figram description",
+        "author": "Felix Reyna",
+        "collab": "none"
+      },
+      "figuitars": {
+        "title": "Figuitars",
+        "short_description": "Figuitars desc corta",
+        "github": "Mira este proyecto en GitHub",
+        "description": "Figuitars description",
+        "author": "Felix Reyna",
+        "collab": "none"
+      },
+      "mystarwars": {
+        "title": "My Star Wars",
+        "short_description": "My Star Wars desc corta",
+        "github": "Mira este proyecto en GitHub",
+        "description": "My Star Wars description",
+        "author": "Felix Reyna",
+        "collab": "none"
+      },
+      "fitimer": {
+        "title": "Fitimer",
+        "short_description": "Fitimer desc corta",
+        "github": "Mira este proyecto en GitHub",
+        "description": "Fitimer description",
+        "author": "Felix Reyna",
+        "collab": "none"
+      },
+      "paintit": {
+        "title": "Paint It",
+        "short_description": "Paint It desc corta",
+        "github": "Mira este proyecto en GitHub",
+        "description": "Paint It description",
+        "author": "Felix Reyna",
+        "collab": "none"
+      }
+    }
   },
   "skills": {
     "title": "Tecnologías",

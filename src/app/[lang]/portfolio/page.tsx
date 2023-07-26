@@ -23,7 +23,7 @@ const Portfolio: React.FC<Props> = async ({ params: { lang } }) => {
       <MobileHeader dictionary={dictionary.header} />
       <Header dictionary={dictionary.header.menu} />
       <section>
-        <h1 className='my-12 font-bold text-center text-main text-5xl'>Portfolio</h1>
+        <h1 className='my-12 font-bold text-center text-main text-5xl'>{dictionary.portfolio.title}</h1>
         <main className='grid grid-cols-12 gap-4 px-4 md:px-16 my-8'>
           {
             projects.map((project: Project) => (

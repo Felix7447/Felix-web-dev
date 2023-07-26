@@ -21,7 +21,65 @@
     "techStack": "Tech Stack",
     "details": "Details",
     "watchLive": "Watch Live",
-    "button":"Show More"
+    "button":"Show More",
+    "projects": {
+      "petvet": {
+        "title": "petvet",
+        "short_description": "petvet short desc",
+        "github": "Watch this project in GitHub",
+        "description": "petvet description",
+        "author": "Felix Reyna",
+        "collab": "none"
+      },
+      "bambina": {
+        "title": "Bambina",
+        "short_description": "Bambina short desc",
+        "github": "Watch this project in GitHub",
+        "description": "Bambina description",
+        "author": "Shakira Contreras",
+        "collab": "Felix Reyna"
+      },
+      "figram": {
+        "title": "figram",
+        "short_description": "Figram short desc",
+        "github": "Watch this project in GitHub",
+        "description": "Figram description",
+        "author": "Felix Reyna",
+        "collab": "none"
+      },
+      "figuitars": {
+        "title": "Figuitars",
+        "short_description": "Figuitars short desc",
+        "github": "Watch this project in GitHub",
+        "description": "Figuitars description",
+        "author": "Felix Reyna",
+        "collab": "none"
+      },
+      "mystarwars": {
+        "title": "My Star Wars",
+        "short_description": "My Star Wars short desc",
+        "github": "Watch this project in GitHub",
+        "description": "My Star Wars description",
+        "author": "Felix Reyna",
+        "collab": "none"
+      },
+      "fitimer": {
+        "title": "Fitimer",
+        "short_description": "Fitimer short desc",
+        "github": "Watch this project in GitHub",
+        "description": "Fitimer description",
+        "author": "Felix Reyna",
+        "collab": "none"
+      },
+      "paintit": {
+        "title": "Paint It",
+        "short_description": "Paint It short desc",
+        "github": "Watch this project in GitHub",
+        "description": "Paint It description",
+        "author": "Felix Reyna",
+        "collab": "none"
+      }
+    }
   },
   "skills": {
     "title": "Skills",
@@ -61,5 +119,8 @@
       "message": "Message",
       "send": "Send"
     }
+  },
+  "projects": {
+
   }
 }
