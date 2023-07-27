@@ -8,6 +8,10 @@ import petvet3 from "@/assets/images/petvet/petvet-3.webp"
 import petvet4 from "@/assets/images/petvet/petvet-4.webp"
 
 import bambinaImage from "@/assets/images/bambina.webp"
+import bambina1 from "@/assets/images/bambina/bambina-1.webp"
+import bambina2 from "@/assets/images/bambina/bambina-2.webp"
+import bambina3 from "@/assets/images/bambina/bambina-3.webp"
+import bambina4 from "@/assets/images/bambina/bambina-4.webp"
 
 import figramImage from "@/assets/images/figram.webp"
 import figram2 from "@/assets/images/figram/figram-2.webp"
@@ -62,7 +66,7 @@ const projects: Project[] = [
     id: "bambina",
     name: "bambina agenda (collab)",
     mainImage: bambinaImage,
-    images: [bambinaImage],
+    images: [bambina1, bambina2, bambina3, bambinaImage, bambina4],
     techStack: [VueIcon, VuetifyIcon, JavaScriptIcon],
     link: "disabled",
   },

@@ -9,8 +9,8 @@ interface Props {
 }
 
 const ProjectPageInfo: React.FC<Props> = ({ info, dictionary }) => {
-  const { name, techStack, link } = info || {}
-  const projectDictionary = dictionary.projects[name || "not_found"]
+  const { id, name, techStack, link } = info || {}
+  const projectDictionary = dictionary.projects[id || "not_found"]
   
   return (
     <div className='p-2 place-self-center'>
