@@ -14,32 +14,32 @@ export const dynamicParams = false
 interface Props {
   params: { 
     lang: Locale,
-    projectName: string 
+    projectId: string 
   }
 }
 
 export function generateStaticParams() {
-  const segments = projects.map((project) => project.name)
+  const segments = projects.map((project) => project.id)
  
-  return segments.map((post) => ({
-    projectName: post,
+  return segments.map((segment) => ({
+    projectName: segment,
   }))
 }
 
 const Project: React.FC<Props> = async ({ params }) => {
-  const { lang, projectName } = params
+  const { lang, projectId } = params
   
   const { header, portfolio, footer } = await getDictionary(lang)
-  const projectInfo = projects.filter((project) => project.name === projectName).pop()
+  const projectInfo = projects.filter((project) => project.id === projectId).pop()
 
   return (
     <main className="min-h-screen">
       <MobileHeader dictionary={header} />
       <Header dictionary={header.menu} />
       <section className='px-8 grid grid-cols-12 my-8'>
-        <h1 className='col-span-12 my-2 font-bold text-center text-main text-5xl md:hidden'>{projectInfo?.name}</h1>
+        <h1 className='col-span-12 my-2 font-bold capitalize text-center text-main text-5xl md:hidden'>{projectInfo?.name}</h1>
         <main className='col-span-12 lg:col-span-7 md:px-8 my-4'>
-          <ProjectPageSlider />
+          <ProjectPageSlider projectId={projectInfo?.id} images={projectInfo?.images || []} />
         </main>
         <aside className='col-span-12 flex items-center lg:col-span-5 md:px-8'>
           <ProjectPageInfo info={projectInfo} dictionary={portfolio} />

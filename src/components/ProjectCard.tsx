@@ -9,10 +9,11 @@ interface Props {
   image: StaticImageData
   title: string
   icons: (() => React.JSX.Element)[]
+  details: string
   link: Url
 }
 
-const ProjectCard: React.FC<Props> = ({ dictionary, image, title, icons, link }) => {  
+const ProjectCard: React.FC<Props> = ({ dictionary, image, title, icons, details, link }) => {  
   return (
     <figure className='relative col-span-12 md:col-span-6 lg:col-span-4 h-[80vh] bg-black'>
       <Image 
@@ -39,7 +40,7 @@ const ProjectCard: React.FC<Props> = ({ dictionary, image, title, icons, link })
             </div>
           </div>
           <div className='relative flex justify-around text-text mt-2'>
-            <Link href={`/project/${title}`} className='w-[45%] p-4 bg-primary text-center text-xl'>{dictionary.details}</Link>
+            <Link href={`/project/${details}`} className='w-[45%] p-4 bg-primary text-center text-xl'>{dictionary.details}</Link>
             {
               link === 'disabled' ?
                 <button className='w-[45%] p-4 bg-gray-500 text-primary text-center text-xl cursor-auto'>{dictionary.watchLive}</button>

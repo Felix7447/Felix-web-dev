@@ -8,10 +8,11 @@ interface Props {
   image: StaticImageData
   title: string
   icons: (() => React.JSX.Element)[]
+  details: string
   link?: any
 }
 
-const ProjectSlider: React.FC<Props> = ({ dictionary, image, title, icons, link }) => {
+const ProjectSlider: React.FC<Props> = ({ dictionary, image, title, icons, details, link }) => {
   return (
     <figure className='relative h-96 my-6 dark:bg-main bg-text'>
       <Image 
@@ -38,7 +39,7 @@ const ProjectSlider: React.FC<Props> = ({ dictionary, image, title, icons, link 
             </div>
           </div>
           <div className='relative flex justify-around text-text text-md'>
-            <Link href={""} className='w-[45%] p-2 bg-primary text-center'>{dictionary.details}</Link>
+            <Link href={`/project/${details}`} className='w-[45%] p-2 bg-primary text-center'>{dictionary.details}</Link>
             {
               link === 'disabled' ?
                 <button className='w-[45%] p-2 bg-gray-500 text-primary text-center cursor-auto'>{dictionary.watchLive}</button>

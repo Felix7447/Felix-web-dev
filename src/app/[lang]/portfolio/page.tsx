@@ -27,7 +27,7 @@ const Portfolio: React.FC<Props> = async ({ params: { lang } }) => {
         <main className='grid grid-cols-12 gap-4 px-4 md:px-16 my-8'>
           {
             projects.map((project: Project) => (
-              <ProjectCard key={`projectSection-${project.name}`} dictionary={dictionary.portfolio} image={project.mainImage} title={project.name} icons={project.techStack} link={project.link} />
+              <ProjectCard key={`projectSection-${project.id}`} dictionary={dictionary.portfolio} image={project.mainImage} title={project.name} icons={project.techStack} details={project.id} link={project.link} />
             ))
           }
         </main>

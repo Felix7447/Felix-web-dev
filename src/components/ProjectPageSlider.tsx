@@ -8,7 +8,14 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-const ProjectPageSlider = () => {
+import Image, { StaticImageData } from 'next/image';
+
+interface Props {
+  projectId: string | undefined
+  images: StaticImageData[]
+}
+
+const ProjectPageSlider: React.FC<Props> = ({ projectId, images }) => {
   return (
     <Swiper
       modules={[Navigation, Pagination, A11y]}
@@ -18,26 +25,21 @@ const ProjectPageSlider = () => {
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
     >
-      <SwiperSlide>
-        <figure className='w-full h-[30vw] flex justify-center items-center'>
-          Slide 1
-        </figure>
-      </SwiperSlide>
-      <SwiperSlide>
-        <figure className='w-full h-[30vw] flex justify-center items-center'>
-          Slide 2
-        </figure>
-      </SwiperSlide>
-      <SwiperSlide>
-        <figure className='w-full h-[30vw] flex justify-center items-center'>
-          Slide 3
-        </figure>
-      </SwiperSlide>
-      <SwiperSlide>
-        <figure className='w-full h-[30vw] flex justify-center items-center'>
-          Slide 4
-        </figure>
-      </SwiperSlide>
+      {
+        images.map((image, index) => (
+          <SwiperSlide key={`${projectId}-image-${index}`}>
+            <figure className='w-[720px] h-[480px] flex justify-center items-center'>
+              <Image 
+                className='object-contain'  
+                src={image || ""} 
+                alt={projectId || "image"} 
+                fill 
+                sizes="(max-width: 768px) 100vw"
+              />
+            </figure>
+          </SwiperSlide>
+        ))
+      }
     </Swiper>
   )
 }
