@@ -60,7 +60,8 @@ const projects: Project[] = [
     images: [petvet1, petvet2, petvetImage, petvet3, petvet4],
     techStack: [NextIcon, TailwindIcon, JavaScriptIcon],
     link: "https://petvet-two.vercel.app/",
-    githubLink: "https://github.com/Felix7447/petvet"
+    githubLink: "https://github.com/Felix7447/petvet",
+    author: "Felix Reyna"
   },
   {
     id: "bambina",
@@ -69,6 +70,8 @@ const projects: Project[] = [
     images: [bambina1, bambina2, bambina3, bambinaImage, bambina4],
     techStack: [VueIcon, VuetifyIcon, JavaScriptIcon],
     link: "disabled",
+    author: "Shakira Contreras",
+    collab: "Felix Reyna"
   },
   {
     id: "figram",
@@ -77,7 +80,8 @@ const projects: Project[] = [
     images: [figramImage, figram2, figram3, figram4],
     techStack: [ReactIcon, StyledComponentsIcon, GraphQlIcon, ViteIcon, JavaScriptIcon],
     link: "https://figram-five.vercel.app/",
-    githubLink: "https://github.com/Felix7447/Figram"
+    githubLink: "https://github.com/Felix7447/Figram",
+    author: "Felix Reyna"
   },
   {
     id: "figuitars",
@@ -86,7 +90,8 @@ const projects: Project[] = [
     images: [figuitars1, figuitars2, figuitars3, figuitarsImage, figuitars4, figuitars5],
     techStack: [ShopifyIcon, CssIcon, JavaScriptIcon],
     link: "https://fi-guitars.myshopify.com/",
-    githubLink: "https://github.com/Felix7447/petvet"
+    githubLink: "https://github.com/Felix7447/petvet",
+    author: "Felix Reyna"
   },
   {
     id: "mystarwars",
@@ -95,7 +100,8 @@ const projects: Project[] = [
     images: [mystarw1, mystarw2, starwarsImage, mystarw3],
     techStack: [JavaScriptIcon, SassIcon, WebpackIcon],
     link: "http://my-star-wars-site.vercel.app/",
-    githubLink: "https://github.com/Felix7447/My-star-wars-site"
+    githubLink: "https://github.com/Felix7447/My-star-wars-site",
+    author: "Felix Reyna"
   },
   {
     id: "fitimer",
@@ -104,7 +110,8 @@ const projects: Project[] = [
     images: [fitimer1, fitimerImage],
     techStack: [JavaScriptIcon, SassIcon, WebpackIcon, HtmlIcon],
     link: "https://timer-felix7447.vercel.app/",
-    githubLink: "https://github.com/Felix7447/Timer"
+    githubLink: "https://github.com/Felix7447/Timer",
+    author: "Felix Reyna"
   },
   {
     id: "paintit",
@@ -113,7 +120,8 @@ const projects: Project[] = [
     images: [paintit1, paintitImage],
     techStack: [JavaScriptIcon, SassIcon, WebpackIcon, HtmlIcon],
     link: "http://my-paint.vercel.app/",
-    githubLink: "https://github.com/Felix7447/My-Paint"
+    githubLink: "https://github.com/Felix7447/My-Paint",
+    author: "Felix Reyna"
   },
 ]
 

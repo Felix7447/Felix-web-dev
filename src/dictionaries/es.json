@@ -28,56 +28,50 @@
         "short_description": "petvet desc corta",
         "github": "Mira este proyecto en GitHub",
         "description": "petvet description",
-        "author": "Felix Reyna",
-        "collab": "none"
+        "author": "Autor: "
       },
       "bambina": {
         "title": "bambina",
         "short_description": "Bambina desc corta",
         "github": "Mira este proyecto en GitHub",
         "description": "Bambina description",
-        "author": "Shakira Contreras",
-        "collab": "Felix Reyna"
+        "author": "Autor: ",
+        "collab": "Colaborador: "
       },
       "figram": {
         "title": "figram",
         "short_description": "Figram desc corta",
         "github": "Mira este proyecto en GitHub",
         "description": "Figram description",
-        "author": "Felix Reyna",
-        "collab": "none"
+        "author": "Autor: "
       },
       "figuitars": {
         "title": "Figuitars",
         "short_description": "Figuitars desc corta",
         "github": "Mira este proyecto en GitHub",
         "description": "Figuitars description",
-        "author": "Felix Reyna",
-        "collab": "none"
+        "author": "Autor: "
       },
       "mystarwars": {
         "title": "My Star Wars",
         "short_description": "My Star Wars desc corta",
         "github": "Mira este proyecto en GitHub",
         "description": "My Star Wars description",
-        "author": "Felix Reyna",
-        "collab": "none"
+        "author": "Autor: "
       },
       "fitimer": {
         "title": "Fitimer",
         "short_description": "Fitimer desc corta",
         "github": "Mira este proyecto en GitHub",
         "description": "Fitimer description",
-        "author": "Felix Reyna",
-        "collab": "none"
+        "author": "Autor: "
       },
       "paintit": {
         "title": "Paint It",
         "short_description": "Paint It desc corta",
         "github": "Mira este proyecto en GitHub",
         "description": "Paint It description",
-        "author": "Felix Reyna",
-        "collab": "none"
+        "author": "Autor: "
       }
     }
   },

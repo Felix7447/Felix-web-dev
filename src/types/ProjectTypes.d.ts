@@ -9,4 +9,6 @@ export default interface Project {
   techStack: (() => React.JSX.Element)[]
   link: Url 
   githubLink?: string
+  author: string
+  collab?: string
 }

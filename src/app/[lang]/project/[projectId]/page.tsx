@@ -8,6 +8,7 @@ import Footer from '@/components/Footer'
 import ProjectPageSlider from '@/components/ProjectPageSlider'
 import ProjectPageInfo from '@/components/ProjectPageInfo'
 import projects from '@/utils/projects'
+import ProjectPageFooter from '@/components/ProjectPageFooter'
 
 export const dynamicParams = false
 
@@ -44,8 +45,8 @@ const Project: React.FC<Props> = async ({ params }) => {
         <aside className='col-span-12 flex items-center lg:col-span-5 md:px-8'>
           <ProjectPageInfo info={projectInfo} dictionary={portfolio} />
         </aside>
-        <div className='col-span-12 my-4'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ipsum veritatis facilis ducimus similique omnis delectus molestiae reiciendis odit provident officia pariatur ipsam iure cumque, iusto unde culpa exercitationem? Nulla?
+        <div className='col-span-12 my-4 md:my-12 p-4'>
+          <ProjectPageFooter info={projectInfo} dictionary={portfolio} />
         </div>
       </section>
       <Footer dictionary={footer} />

@@ -4,7 +4,7 @@ export interface PortfolioProject {
   github: string
   description: string
   author: string
-  collab: string
+  collab?: string
 }
 
 export interface Portfolio {
