@@ -1,7 +1,6 @@
 "use client"
 import React from 'react'
 import Link from 'next/link';
-import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 import { Portfolio } from '@/types/portfolioTypes'
@@ -24,14 +23,14 @@ const Portfolio: React.FC<Props> = ({ dictionary }) => {
   const pathname = usePathname()
   return (
     <section id='projects' className='dark:bg-secondary bg-main py-10'>
-      <h1 className='dark:text-main text-text text-3xl md:text-5xl text-center font-bold'>
+      <h1 className='dark:text-main text-text text-3xl my-4 md:my-8 md:text-5xl text-center font-bold'>
         {dictionary.title}
       </h1>
       <Swiper spaceBetween={50} className='!px-16 md:!hidden'>
         {
           projects.slice(0, 6).map((project: Project) => (
-            <SwiperSlide>
-              <ProjectSlider key={`projectSection-${project.id}`} dictionary={dictionary} image={project.mainImage} title={project.name} icons={project.techStack} details={project.id} link={project.link} />
+            <SwiperSlide key={`projectSection-${project.id}`}>
+              <ProjectSlider dictionary={dictionary} image={project.mainImage} title={project.name} icons={project.techStack} details={project.id} link={project.link} />
             </SwiperSlide>
           ))
         }

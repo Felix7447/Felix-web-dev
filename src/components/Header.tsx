@@ -12,6 +12,7 @@ import FigureImage from './FigureImage'
 import image from "@/assets/images/felix-reyna.webp"
 
 import MenuLink from './MenuLink'
+import { getMenu } from '@/utils/mainMenu'
 
 interface Props {
   dictionary: HeaderMenu
@@ -20,24 +21,7 @@ interface Props {
 const Header: React.FC<Props> = ({ dictionary }) => {
   const pathname = usePathname()
 
-  const mainMenu = [
-    {
-      link: "#about",
-      text: dictionary.about
-    }, 
-    {
-      link: "#projects",
-      text: dictionary.projects
-    },
-    {
-      link: "#skills",
-      text: dictionary.skills
-    },
-    {
-      link: "#contact",
-      text: dictionary.contact
-    }
-  ]
+  const mainMenu = getMenu(dictionary)
 
   return (
     <header className='hidden z-20 sticky top-0 dark:bg-secondary bg-main h-20 py-2 justify-between items-center md:flex'>

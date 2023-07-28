@@ -6,12 +6,12 @@ import { Contact } from '@/types/contactTypes'
 
 const Contact = ({ dictionary }: { dictionary: Contact }) => {
   return (
-    <section id='contact' className='py-10 dark:bg-secondary bg-main text-text'>
-      <h1 className='text-3xl my-8 dark:text-main text-center font-bold'>
+    <section id='contact' className='py-10 dark:bg-secondary bg-text dark:text-text text-primary'>
+      <h1 className='text-3xl my-8 text-main text-center font-bold'>
         {dictionary.title}
       </h1>
-      <main className='grid grid-cols-12 px-8 my-10'>
-        <aside className='col-span-12 flex justify-center md:order-2 md:col-span-4 lg:col-start-8 lg:col-end-11'>
+      <main className='max-w-5xl mx-auto grid grid-cols-12 px-8 my-10'>
+        <aside className='col-span-12 flex justify-center md:order-2 md:col-span-4 '>
           <figure className='relative w-60 h-60 mb-8 rounded-full dark:bg-main bg-text'>
             <Image 
               src={contactImage} 
@@ -22,9 +22,9 @@ const Contact = ({ dictionary }: { dictionary: Contact }) => {
             />
           </figure>
         </aside>
-        <p className='col-span-12 px-4 text-center md:col-span-8 md:flex md:flex-col md:justify-center md:text-start md:text-2xl lg:col-start-3 lg:col-end-8'>
+        <p className='col-span-12 px-4 text-center md:col-span-8 md:flex md:flex-col md:justify-center md:text-start md:text-2xl'>
           {dictionary.description}
-          <Link href={'/'} className='inline dark:text-main text-primary'>{dictionary.email}</Link>
+          <a href={'mailto:felixreyna48@gmail.com'} className='inline text-main hover:underline hover:duration-200'>{dictionary.email}</a>
         </p>
       </main>
     </section>

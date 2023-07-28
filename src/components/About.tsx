@@ -7,11 +7,11 @@ import { About } from '@/types/aboutTypes'
 
 const About = ({ dictionary }: { dictionary: About }) => {
   return (
-    <section id='about' className='grid grid-cols-12 min-h-screen dark:bg-primary bg-text py-10 px-8 lg:px-28 text-center'>
-      <h1 className='col-span-12 self-center text-3xl dark:text-text text-secondary my-2 font-bold md:text-5xl'>
+    <section id='about' className='max-w-7xl mx-auto grid grid-cols-12 min-h-screen dark:bg-primary bg-text py-10 px-8 lg:px-28 text-center'>
+      <h1 className='col-span-12 self-center text-3xl text-main my-2 font-bold md:text-5xl'>
         {dictionary.title}
       </h1>
-      <div className='col-span-12 w-full flex justify-center items-center my-8 px-4 md:col-span-4 lg:col-span-5 md:order-2'>
+      <div className='col-span-12 w-full flex justify-center items-center my-8 px-4 md:my-0 md:col-span-4 md:order-2'>
         <figure className={`relative flex justify-center items-center w-64 h-64 md:w-56 md:h-56 lg:w-80 lg:h-80 bg-main rounded-full`}>
           <Image 
             className='scale-90 rounded-full'
@@ -22,7 +22,7 @@ const About = ({ dictionary }: { dictionary: About }) => {
           />
         </figure>
       </div>
-      <aside className='col-span-12 flex items-center dark:text-text text-secondary md:col-span-8 md:order-1 lg:col-start-2 lg:col-span-6'>
+      <aside className='col-span-12 flex items-center dark:text-text text-secondary md:col-span-8 md:order-1'>
         <p className='w-full px-4 md:text-left md:text-3xl'>{dictionary.description}</p>
       </aside>
       <footer className="col-span-12 p-4 flex justify-around text-main lg:col-start-2 md:col-span-6 md:order-3 md:p-0">

@@ -12,35 +12,19 @@ import image from "@/assets/images/felix-reyna.webp"
 
 import FigureImage from './FigureImage'
 import MenuLink from './MenuLink';
+import { getMenu } from '@/utils/mainMenu';
 
 interface Props {
-  menu: HeaderMenu
+  dictionary: HeaderMenu
 }
 
-const BurgerMenu: React.FC<Props> = ({ menu }) => {
+const BurgerMenu: React.FC<Props> = ({ dictionary }) => {
   const disableBodyScroll = bodyScrollLock.disableBodyScroll;
   const enableBodyScroll = bodyScrollLock.enableBodyScroll;
 
   const pathname = usePathname()
 
-  const mainMenu = [
-    {
-      link: "#about",
-      text: menu.about
-    }, 
-    {
-      link: "#projects",
-      text: menu.projects
-    },
-    {
-      link: "#skills",
-      text: menu.skills
-    },
-    {
-      link: "#contact",
-      text: menu.contact
-    }
-  ]
+  const mainMenu = getMenu(dictionary)
 
   const [customOpen, setCustomOpen] = useState(false)
 
@@ -72,10 +56,10 @@ const BurgerMenu: React.FC<Props> = ({ menu }) => {
             <Transition
               show={customOpen}
               className="absolute top-0 left-0 z-10"
-              enter="transition duration-100 ease-out"
+              enter="transition duration-200 ease-out"
               enterFrom="transform scale-95 opacity-0"
               enterTo="transform scale-100 opacity-100"
-              leave="transition duration-75 ease-out"
+              leave="transition duration-200 ease-out"
               leaveFrom="transform scale-100 opacity-100"
               leaveTo="transform scale-95 opacity-0"
             >

@@ -26,7 +26,7 @@ const ProjectCard: React.FC<Props> = ({ dictionary, image, title, icons, details
       />
       <aside className='relative h-full w-full bg-gradient-to-t from-black to-transparent'>
         <div className='w-full absolute bottom-0 pb-4 px-4 dark:text-text text-text'>
-          <h1 className='font-bold text-3xl my-2'>{title}</h1>
+          <h1 className='capitalize font-bold text-3xl my-2'>{title}</h1>
           <div className='my-4'>
             <h3 className='text-2xl'>{dictionary.techStack}</h3>
             <div className='flex gap-2 text-xl'>

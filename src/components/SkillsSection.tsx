@@ -25,8 +25,8 @@ import ViteIcon from '@/assets/icons/ViteIcon';
 
 const SkillsSection = ({ dictionary }: { dictionary: Skills }) => {
   return (
-    <section id='skills' className='h-[50vh] py-10 dark:bg-primary bg-text dark:text-text text-primary'>
-      <h1 className='text-3xl my-8 text-center font-bold dark:text-main'>{dictionary.title}</h1>
+    <section id='skills' className='py-10 dark:bg-primary bg-text dark:text-text text-primary'>
+      <h1 className='text-3xl my-8 text-center font-bold text-main'>{dictionary.title}</h1>
       <Swiper modules={[Autoplay]} spaceBetween={80} slidesPerView={'auto'} autoplay={{delay: 1500}} loop={true} breakpoints={{ 768: { slidesPerView: 3, autoplay: { delay: 2000 } }}} className='!px-8 md:!px-16 !my-8 !text-center'>
         <SwiperSlide>
           <figure className='h-20 flex justify-center items-center scale-150'>

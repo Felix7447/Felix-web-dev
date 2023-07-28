@@ -1,13 +1,15 @@
+"use client"
 import React from 'react'
 import Link from 'next/link'
 
 interface Props {
   link: string
   text: string
+  color?: string
   handleMenu?: () => void
 }
 
-const MenuLink: React.FC<Props> = ({ link, text, handleMenu }) => {
+const MenuLink: React.FC<Props> = ({ link, text, color = 'main', handleMenu }) => {
   const handleScroll = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     event.preventDefault()
     const href = event.currentTarget.href;
@@ -24,7 +26,7 @@ const MenuLink: React.FC<Props> = ({ link, text, handleMenu }) => {
   }
 
   return (
-    <Link href={link} className='dark:hover:text-main' onClick={handleScroll}>
+    <Link href={link} className={`dark:hover:text-${color} duration-200`} onClick={handleScroll}>
       {text}
     </Link>
   )

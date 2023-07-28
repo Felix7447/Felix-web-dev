@@ -19,7 +19,7 @@ const MobileHeader = ({ dictionary }: { dictionary: Header }) => {
     <header className='sticky top-[-1px] z-20 h-20 px-8 dark:bg-secondary bg-main flex justify-between items-center md:hidden'>
       {
         (pathname.length <= 3) ?
-          <BurgerMenu menu={dictionary.menu} />
+          <BurgerMenu dictionary={dictionary.menu} />
           : (
             <Link href={`/`} className='flex justify-center items-center'>
               <FigureImage size={9} image={image.src}/>

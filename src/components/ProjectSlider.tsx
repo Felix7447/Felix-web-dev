@@ -25,7 +25,7 @@ const ProjectSlider: React.FC<Props> = ({ dictionary, image, title, icons, detai
       />
       <aside className='relative h-full w-full bg-gradient-to-t from-black to-transparent'>
         <div className='w-full absolute bottom-0 pb-4 px-4 dark:text-text text-text'>
-          <h1 className='font-bold text-xl'>{title}</h1>
+          <h1 className='capitalize font-bold text-xl'>{title}</h1>
           <div className='my-2'>
             <h3 className='text-lg'>{dictionary.techStack}</h3>
             <div className='flex gap-2 text-lg overflow-hidden'>

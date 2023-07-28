@@ -23,7 +23,7 @@ export function generateStaticParams() {
   const segments = projects.map((project) => project.id)
  
   return segments.map((segment) => ({
-    projectName: segment,
+    projectId: segment,
   }))
 }
 

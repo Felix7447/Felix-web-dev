@@ -5,8 +5,11 @@ import EmailForm from './EmailForm'
 import GmailIcon from '@/assets/icons/GmailIcon'
 import LinkedinIcon from '@/assets/icons/LinkedinIcon'
 import GithubIcon from '@/assets/icons/GithubIcon'
+import { getMenu } from '@/utils/mainMenu'
+import MenuLink from './MenuLink'
 
 const Footer = ({ dictionary }: { dictionary: Footer }) => {
+  const mainMenu = getMenu(dictionary.links)
   return (
     <footer className='bg-main dark:text-secondary text-text p-12 grid grid-cols-12'>
       <main className='col-span-12 mb-4 md:col-span-6 md:px-8 md:py-4'>
@@ -22,10 +25,11 @@ const Footer = ({ dictionary }: { dictionary: Footer }) => {
           {dictionary.explore}
         </h1>
         <nav className='font-bold my-4 flex flex-col md:text-xl md:font-normal'>
-          <Link href={'/'} className='md:my-1 ms-4 hover:font-bold'>{dictionary.links.about}</Link>
-          <Link href={'/'} className='md:my-1 ms-4 hover:font-bold'>{dictionary.links.projects}</Link>
-          <Link href={'/'} className='md:my-1 ms-4 hover:font-bold'>{dictionary.links.skills}</Link>
-          <Link href={'/'} className='md:my-1 ms-4 hover:font-bold'>{dictionary.links.contact}</Link>
+          {
+            mainMenu.map(({link, text}) => (
+              <MenuLink link={link} text={text} color='primary' />
+            ))
+          }
         </nav>
       </aside>
       <aside className='col-span-12 my-4 md:col-span-6 md:px-8'>
@@ -37,9 +41,9 @@ const Footer = ({ dictionary }: { dictionary: Footer }) => {
         </p>
         <div className="flex justify-start gap-10 my-4 md:my-8">
           <figure className='w-16 h-16 rounded-md flex justify-center items-center bg-primary'>
-            <Link href={`mailto:felixreyna48@gmail.com`}>
+            <a href={`mailto:felixreyna48@gmail.com`}>
               <GmailIcon />
-            </Link>
+            </a>
           </figure>
           <figure className='w-16 h-16 rounded-md flex justify-center items-center bg-primary'>
             <Link href={`https://www.linkedin.com/in/felix-reyna/`} target='_blank'>
