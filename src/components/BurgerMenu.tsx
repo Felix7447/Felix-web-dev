@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation';
 
@@ -23,19 +23,32 @@ const BurgerMenu: React.FC<Props> = ({ dictionary }) => {
   const enableBodyScroll = bodyScrollLock.enableBodyScroll;
 
   const pathname = usePathname()
-
   const mainMenu = getMenu(dictionary)
-
+  
   const [customOpen, setCustomOpen] = useState(false)
 
   const handleMenu = () => {
     setCustomOpen(!customOpen)
   }
 
+  const handleScroll = (toggle: boolean) => {
+    const [body, setBody] = useState<Window | null>(null)
+
+    useEffect(() => {
+      setBody(window)
+    }, [])
+
+    if (!body) {
+      return
+    }
+
+    return toggle ? disableBodyScroll(body) : enableBodyScroll(body)
+  }
+
   return (
     <Menu>
       {({ open }) => {
-        customOpen ? disableBodyScroll(window) : enableBodyScroll(window)
+        customOpen ? handleScroll(true) : handleScroll(false)
         return (
           <>
             <Menu.Button className="dark:text-main text-text z-20 overflow-hidden" onClick={handleMenu}>
