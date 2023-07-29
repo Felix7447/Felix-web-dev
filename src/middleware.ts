@@ -34,8 +34,8 @@ export function middleware(request: NextRequest) {
       // '/manifest.json',
       '/favicon.ico',
       '/coding-man_desktop.webp',
-      '/public/ResumeEN.pdf',
-      '/public/ResumeESPDF.pdf'
+      '/ResumeEN.pdf',
+      '/ResumeES.pdf'
     ].includes(pathname)
   )
     return
