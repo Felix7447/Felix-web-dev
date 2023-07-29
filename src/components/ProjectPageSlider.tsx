@@ -24,6 +24,7 @@ const ProjectPageSlider: React.FC<Props> = ({ projectId, images }) => {
       navigation
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
+      className='dark:bg-secondary bg-primary rounded-lg'
     >
       {
         images.map((image, index) => (
@@ -34,6 +35,7 @@ const ProjectPageSlider: React.FC<Props> = ({ projectId, images }) => {
                 src={image || ""} 
                 alt={projectId || "image"} 
                 fill 
+                priority
                 sizes="(max-width: 768px) 100vw"
               />
             </figure>

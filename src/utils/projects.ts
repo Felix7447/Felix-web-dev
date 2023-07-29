@@ -90,7 +90,6 @@ const projects: Project[] = [
     images: [figuitars1, figuitars2, figuitars3, figuitarsImage, figuitars4, figuitars5],
     techStack: [ShopifyIcon, CssIcon, JavaScriptIcon],
     link: "https://fi-guitars.myshopify.com/",
-    githubLink: "https://github.com/Felix7447/petvet",
     author: "Felix Reyna"
   },
   {

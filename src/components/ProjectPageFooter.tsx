@@ -15,13 +15,13 @@ const ProjectPageFooter: React.FC<Props> = ({ info, dictionary }) => {
 
   return (
     <section className='flex flex-col gap-4 text-xl md:text-2xl md:max-w-[80%] md:px-8 lg:m-auto'>
-      <h1>{projectDictionary?.author} {author}</h1>
-      {info?.collab && <h1>{projectDictionary?.collab} {info?.collab}</h1>}
-      <span>
+      <h1 className='text-main font-bold'>{projectDictionary?.author} {author}</h1>
+      {info?.collab && <h1 className='text-main font-bold'>{projectDictionary?.collab} {info?.collab}</h1>}
+      {githubLink && (<span>
         <Link href={githubLink || ""} target='_blank' className='text-main underline md:no-underline md:hover:underline'>
           {projectDictionary?.github}
         </Link>
-      </span>
+      </span>)}
       <p>
         {projectDictionary?.description}
       </p>

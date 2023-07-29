@@ -43,7 +43,7 @@ const EmailForm: React.FC<Props> = ({ form }) => {
     <form ref={formElement} onSubmit={handleSubmit}>
       <input ref={email} name="email" type="email" placeholder={form.address} className='p-4 bg-inherit w-full outline-none border-b-2 border-primary placeholder:text-secondary md:w-2/5 md:mx-2'/>
       <input ref={subject} name="subject" type="text" placeholder={form.subject} className='p-4 bg-inherit w-full outline-none border-b-2 border-primary placeholder:text-secondary md:w-2/5 md:mx-2'/>
-      <textarea ref={message} name="message" placeholder={form.message} className='block w-full p-4 bg-inherit outline-none placeholder:text-secondary border-b-2 border-primary'/>
+      <textarea ref={message} name="message" placeholder={form.message} className='block w-full p-4 bg-inherit outline-none placeholder:text-secondary border-b-2 border-primary md:max-w-[83%]'/>
       <button type='submit' className='block w-full my-4 p-4 bg-secondary dark:text-main text-text md:w-1/2'>
         {form.send}
       </button>

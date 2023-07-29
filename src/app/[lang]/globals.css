@@ -9,15 +9,6 @@
   --swiper-theme-color: #00ADB5 !important;
 }
 
-/* space-grotesk-regular - latin */
-@font-face {
-  font-display: swap;
-  font-family: 'Space Grotesk';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../../assets/fonts/space-grotesk-v15-latin-regular.woff2') format('woff2');
-}
-
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -27,6 +18,5 @@
 }
 
 body {
-  font-family: 'Space Grotesk';
   color: rgb(var(--foreground-rgb));
 }
