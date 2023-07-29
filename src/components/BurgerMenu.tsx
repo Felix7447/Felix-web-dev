@@ -2,8 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation';
-
-const bodyScrollLock = require('body-scroll-lock');
+import useHandleScroll from '@/hooks/useHandleScroll';
 
 import { Menu, Transition } from '@headlessui/react'
 import { HeaderMenu } from '@/types/headerTypes'
@@ -19,9 +18,6 @@ interface Props {
 }
 
 const BurgerMenu: React.FC<Props> = ({ dictionary }) => {
-  const disableBodyScroll = bodyScrollLock.disableBodyScroll;
-  const enableBodyScroll = bodyScrollLock.enableBodyScroll;
-
   const pathname = usePathname()
   const mainMenu = getMenu(dictionary)
   
@@ -31,24 +27,11 @@ const BurgerMenu: React.FC<Props> = ({ dictionary }) => {
     setCustomOpen(!customOpen)
   }
 
-  const handleScroll = (toggle: boolean) => {
-    const [body, setBody] = useState<Window | null>(null)
-
-    useEffect(() => {
-      setBody(window)
-    }, [])
-
-    if (!body) {
-      return
-    }
-
-    return toggle ? disableBodyScroll(body) : enableBodyScroll(body)
-  }
+  useHandleScroll(customOpen)
 
   return (
     <Menu>
       {({ open }) => {
-        customOpen ? handleScroll(true) : handleScroll(false)
         return (
           <>
             <Menu.Button className="dark:text-main text-text z-20 overflow-hidden" onClick={handleMenu}>

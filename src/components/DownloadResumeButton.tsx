@@ -19,7 +19,7 @@ const DownloadResumeButton: React.FC<Props> = ({ text }) => {
     } else {
       setLink('ResumeEN.pdf')
     }
-  }, [])
+  }, [pathname])
 
   return (
     <div className='my-8'>

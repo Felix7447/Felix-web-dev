@@ -26,7 +26,7 @@ const AnimatedTitle: React.FC<Props> = ({ text }) => {
     return () => {
       typingInstance.destroy()
     }
-  }, [])
+  }, [text])
 
   return (
     <h1 ref={title} className='text-3xl dark:text-main text-primary font-bold md:text-6xl md:w-50'>

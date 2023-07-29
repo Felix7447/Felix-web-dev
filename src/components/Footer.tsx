@@ -27,7 +27,7 @@ const Footer = ({ dictionary }: { dictionary: Footer }) => {
         <nav className='font-bold my-4 flex flex-col md:text-xl md:font-normal'>
           {
             mainMenu.map(({link, text}) => (
-              <MenuLink link={link} text={text} color='primary' />
+              <MenuLink key={`Footer-Link-${text}`} link={link} text={text} color='primary' />
             ))
           }
         </nav>
