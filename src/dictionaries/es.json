@@ -25,52 +25,52 @@
     "projects": {
       "petvet": {
         "title": "petvet",
-        "short_description": "petvet desc corta",
+        "short_description": "Landing Page para la Médico Veterinario Marianella Tovar, fue creada con el objetivo de proporcionar a sus clientes una manera de acceso rápido a sus medios de contactos, servicios y mucho más. Para esta web se utilizaron tecnologías como NextJS, TailwindCss y por supuesto JavaScript!",
         "github": "Mira este proyecto en GitHub",
-        "description": "petvet description",
+        "description": "Para la realización de este proyecto analicé junto con la Médico Veterinario las ventajas que le puede otorgar el tener su propia landing page, luego se tomaron en cuenta las distintas áreas que la Veterinaria quizo mostrar a sus clientes y procedí a realizar esta web con NextJS de manera que esta se puede convertir en un web site mas complejo a futuro.",
         "author": "Autor: "
       },
       "bambina": {
         "title": "bambina",
-        "short_description": "Bambina desc corta",
+        "short_description": "Web App de agendas para Bambina Studio, Bambina es un SPA que necesitaba una aplicación de agendas. Para esto colaboré junto con mi compañera Shakira Contreras. Para el desarrollo de esta Web App ella se encargó de crear la arquitectura de la aplicación mientras que yo me encargué de agregar la funcionalidad.",
         "github": "Mira este proyecto en GitHub",
-        "description": "Bambina description",
+        "description": "Siendo este mi primer proyecto utilizando Vue, me encargué de estudiar el funcionamiento básico de dicho framework para así comprender la arquitectura de la app y finalmente agregar la interactividad.   Advertencia: Debido a que es una web privada no es posible proporcionar código de GitHub ni acceso a dicha.",
         "author": "Autor: ",
         "collab": "Colaborador: "
       },
       "figram": {
         "title": "figram",
-        "short_description": "Figram desc corta",
+        "short_description": "Credenciales para login: 'user: miduga@gmail.com' 'password: test'.\n Figram es una SPA clon de instagram para móvil creada con el objetivo de aprender tecnologías como Reactjs, styled components, consumo de API con GraphQL y Vite.",
         "github": "Mira este proyecto en GitHub",
-        "description": "Figram description",
+        "description": "Para el desarrollo de este proyecto se utilizó una API previamente creada por el equipo de platzi. Esta app posee distintas funcionalidades como dar like a una foto, registrarte, iniciar sesión, cerrar sesión, observar tus fotos favoritas y clasificar a las mascotas por categorías.",
         "author": "Autor: "
       },
       "figuitars": {
         "title": "Figuitars",
-        "short_description": "Figuitars desc corta",
+        "short_description": "Credenciales para ingresar: 'contraseña: asdf'. \n Figuitars es una plantilla web de E-commerce desarrollado en la plataforma de shopify el objetivo de este proyecto es aprender a utilizar el lenguaje Liquid en conjunto con HTML, CSS y JavaScript para el desarrollo y personalizacion de tiendas online.",
         "github": "Mira este proyecto en GitHub",
-        "description": "Figuitars description",
+        "description": "Para el desarrollo de este proyecto se utilizó el lenguaje de programación Liquid en conjunto con HTML, CSS y JavaScript con este proyecto mi objetivo personal es mostrar mi pasión por la música y mi instrumento favorito: la guitarra.",
         "author": "Autor: "
       },
       "mystarwars": {
         "title": "My Star Wars",
-        "short_description": "My Star Wars desc corta",
+        "short_description": "Star Wars es una de mis sagas de películas favoritas y ¿Qué es mejor que practicar tus habilidades utilizando algo que te gusta?. Es uno mis primeros proyectos desarrollado con HTML, SASS, Vanila JS y Webpack.",
         "github": "Mira este proyecto en GitHub",
-        "description": "My Star Wars description",
+        "description": "Para el desarrollo de este proyecto utilicé la API de star wars (Swapi) para obtener la información de los personajes, películas, naves, vehículos y planetas. Utilicé Webpack como Bundler e hidraté el index.html utilizando Vanila JavaScript con la idea de simular el comportamiento de React y finalmente para los estilos utilicé el preprocesador Sass para hacer el desarrollo más rápido.",
         "author": "Autor: "
       },
       "fitimer": {
         "title": "Fitimer",
-        "short_description": "Fitimer desc corta",
+        "short_description": "Fi timer es un temporizador desarrollado con HTML, SASS y JavaScript con el objetivo de pulir mis habilidades con JavaScript puro.",
         "github": "Mira este proyecto en GitHub",
-        "description": "Fitimer description",
+        "description": "Para el desarrollo de este proyecto me enfoqué en el funcionamiento del temporizador utilizando el objeto Date de JavaScript, luego me encargue de crear las funcionalidades para cada uno de los botones.",
         "author": "Autor: "
       },
       "paintit": {
         "title": "Paint It",
-        "short_description": "Paint It desc corta",
+        "short_description": "Paintit es mi primer proyecto desarrollado con HTML, CSS y JavaScript luego lo mejoré añadiendole nuevas tecnologías como Sass y Webpack.",
         "github": "Mira este proyecto en GitHub",
-        "description": "Paint It description",
+        "description": "Para el desarrollo de este proyecto utilicé el canvas de JavaScript, referencias al DOM y manejo de eventos para la funcionalidad.",
         "author": "Autor: "
       }
     }
