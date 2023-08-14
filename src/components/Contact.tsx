@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'next/link'
 import Image from 'next/image'
 import contactImage from "@/assets/images/contact-image.webp"
 import { Contact } from '@/types/contactTypes'

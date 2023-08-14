@@ -1,6 +1,5 @@
 "use client"
-import React from 'react'
-import Image from 'next/image';
+import React, { useEffect } from 'react'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
@@ -23,9 +22,19 @@ import WebpackIcon from '@/assets/icons/WebpackIcon';
 import ShopifyIcon from '@/assets/icons/ShopifyIcon';
 import ViteIcon from '@/assets/icons/ViteIcon';
 
+import AOS from 'aos'
+import 'aos/dist/aos.css';
+
 const SkillsSection = ({ dictionary }: { dictionary: Skills }) => {
+
+  useEffect(() => {
+    AOS.init({
+      startEvent: 'DOMContentLoaded'
+    })
+  }, [])
+
   return (
-    <section id='skills' className='py-10 dark:bg-primary bg-text dark:text-text text-primary'>
+    <section id='skills' className='py-10 dark:bg-primary bg-text dark:text-text text-primary' data-aos='fade-right'>
       <h1 className='text-3xl my-8 text-center font-bold text-main'>{dictionary.title}</h1>
       <Swiper modules={[Autoplay]} spaceBetween={80} slidesPerView={'auto'} autoplay={{delay: 1500}} loop={true} breakpoints={{ 768: { slidesPerView: 3, autoplay: { delay: 2000 } }}} className='!px-8 md:!px-16 !my-8 !text-center'>
         <SwiperSlide>

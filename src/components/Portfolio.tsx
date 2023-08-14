@@ -1,11 +1,12 @@
 "use client"
-import React from 'react'
+import React, { useEffect } from 'react'
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 import { Portfolio } from '@/types/portfolioTypes'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -15,18 +16,28 @@ import ProjectCard from './ProjectCard';
 import Project from '@/types/ProjectTypes';
 import ProjectSlider from './ProjectSlider';
 
+import AOS from 'aos'
+import 'aos/dist/aos.css';
+
 interface Props {
   dictionary: Portfolio
 }
 
 const Portfolio: React.FC<Props> = ({ dictionary }) => {
   const pathname = usePathname()
+
+  useEffect(() => {
+    AOS.init({
+      startEvent: 'DOMContentLoaded'
+    })
+  }, [])
+
   return (
-    <section id='projects' className='dark:bg-secondary bg-main py-10'>
+    <section id='projects' className='dark:bg-secondary bg-main py-10' data-aos="fade-up">
       <h1 className='dark:text-main text-text text-3xl my-4 md:my-8 md:text-5xl text-center font-bold'>
         {dictionary.title}
       </h1>
-      <Swiper spaceBetween={50} className='!px-16 md:!hidden'>
+      <Swiper spaceBetween={50} className='!px-12 md:!hidden' modules={[Autoplay]} autoplay={{delay: 3000}}>
         {
           projects.slice(0, 6).map((project: Project) => (
             <SwiperSlide key={`projectSection-${project.id}`}>

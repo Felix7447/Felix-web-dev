@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Image, { StaticImageData } from 'next/image'
 import Link from 'next/link'
 import { Portfolio } from '@/types/portfolioTypes'
 import { Url } from 'next/dist/shared/lib/router/router'
+
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
 interface Props {
   dictionary: Portfolio
@@ -14,8 +17,15 @@ interface Props {
 }
 
 const ProjectCard: React.FC<Props> = ({ dictionary, image, title, icons, details, link }) => {  
+
+  useEffect(() => {
+    AOS.init({
+      startEvent: 'DOMContentLoaded'
+    })
+  }, [])
+
   return (
-    <figure className='relative col-span-12 md:col-span-6 lg:col-span-4 h-[80vh] bg-black'>
+    <figure className='relative col-span-12 md:col-span-6 lg:col-span-4 h-[80vh] bg-black' data-aos='zoom-out' data-aos-delay="300">
       <Image 
         src={image} 
         alt={title} 

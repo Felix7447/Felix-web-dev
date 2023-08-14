@@ -29,9 +29,7 @@ const AnimatedTitle: React.FC<Props> = ({ text }) => {
   }, [text])
 
   return (
-    <h1 ref={title} className='text-3xl dark:text-main text-primary font-bold md:text-6xl md:w-50'>
-      {text}
-    </h1>
+    <h1 ref={title} className='text-3xl dark:text-main text-primary font-bold md:text-6xl md:w-50'></h1>
   )
 }
 

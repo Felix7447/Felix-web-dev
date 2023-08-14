@@ -78,7 +78,7 @@ const projects: Project[] = [
     name: "figram",
     mainImage: figramImage,
     images: [figramImage, figram2, figram3, figram4],
-    techStack: [ReactIcon, StyledComponentsIcon, GraphQlIcon, ViteIcon, JavaScriptIcon],
+    techStack: [ReactIcon, StyledComponentsIcon, GraphQlIcon, ViteIcon],
     link: "https://figram-five.vercel.app/",
     githubLink: "https://github.com/Felix7447/Figram",
     author: "Felix Reyna"
