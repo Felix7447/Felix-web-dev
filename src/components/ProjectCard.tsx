@@ -1,11 +1,8 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import Image, { StaticImageData } from 'next/image'
 import Link from 'next/link'
 import { Portfolio } from '@/types/portfolioTypes'
 import { Url } from 'next/dist/shared/lib/router/router'
-
-import AOS from 'aos'
-import 'aos/dist/aos.css';
 
 interface Props {
   dictionary: Portfolio
@@ -18,23 +15,17 @@ interface Props {
 
 const ProjectCard: React.FC<Props> = ({ dictionary, image, title, icons, details, link }) => {  
 
-  useEffect(() => {
-    AOS.init({
-      startEvent: 'DOMContentLoaded'
-    })
-  }, [])
-
   return (
-    <figure className='relative col-span-12 md:col-span-6 lg:col-span-4 h-[80vh] bg-black' data-aos='zoom-out' data-aos-delay="300">
-      <Image 
-        src={image} 
-        alt={title} 
-        fill 
-        className='object-cover bg-black' 
-        priority
-        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-      />
-      <aside className='relative h-full w-full bg-gradient-to-t from-black to-transparent'>
+    <figure className='relative col-span-12 md:col-span-6 lg:col-span-4 h-[80vh] bg-black'>
+        <Image 
+          src={image} 
+          alt={title} 
+          fill 
+          className='object-cover bg-black' 
+          priority
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
+      <aside className='relative z-10 h-full w-full bg-gradient-to-t from-black to-transparent'>
         <div className='w-full absolute bottom-0 pb-4 px-4 dark:text-text text-text'>
           <h1 className='capitalize font-bold text-3xl my-2'>{title}</h1>
           <div className='my-4'>

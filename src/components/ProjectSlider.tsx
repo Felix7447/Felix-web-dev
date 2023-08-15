@@ -2,6 +2,7 @@ import React from 'react'
 import Image, { StaticImageData } from 'next/image'
 import Link from 'next/link'
 import { Portfolio } from '@/types/portfolioTypes'
+import { useRouter } from 'next/navigation'
 
 interface Props {
   dictionary: Portfolio
@@ -13,8 +14,15 @@ interface Props {
 }
 
 const ProjectSlider: React.FC<Props> = ({ dictionary, image, title, icons, details, link }) => {
+
+  const router = useRouter()
+
+  const handleClick = () => {
+    link !== 'disabled' && router.push(`${link}`)
+  }
+
   return (
-    <figure className='relative h-96 my-6 dark:bg-main bg-text'>
+    <figure className='relative h-96 my-6 dark:bg-main bg-text' onClick={handleClick}>
       <Image 
         src={image} 
         alt={title} 
