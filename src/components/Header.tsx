@@ -33,11 +33,17 @@ const Header: React.FC<Props> = ({ dictionary }) => {
             </Link>
           </li>
           {
-            (pathname.length <= 3) && mainMenu.map((item) => (
+            (pathname.length <= 3) ?
+            mainMenu.map((item) => (
               <li key={`item-${item.link}`}>
                 <MenuLink link={item.link} text={item.text} />
               </li>
-            ))
+            )) :
+            <li>
+            <Link href={`/`} className='hover:text-main duration-150'>
+              Home
+            </Link>
+          </li>
           }
         </ul>
       </nav>

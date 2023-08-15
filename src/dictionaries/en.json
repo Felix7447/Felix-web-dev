@@ -26,14 +26,14 @@
       "petvet": {
         "title": "petvet",
         "short_description": "Veterinarian Marianella Tovar's Landing Page. Was created in order to give fast access to her clients for get in touch with her, offer her services & much more. The tools implemented for the development of this web site were: NextJS, TailwindCSS & of course JavaScript!",
-        "github": "Watch this project in GitHub",
+        "github": "Watch this project on GitHub",
         "description": "In order to start developing this project the Veterinarian & I analized the advantages that a landing page can offer to her. Then we took care about the different areas the Vet wanted to show to her clients & finally I started the development of this web by using NextJS so I can make this web more complex in the future.",
         "author": "Author: "
       },
       "bambina": {
         "title": "bambina",
         "short_description": "Schedule Web App for Bambina Studio. Bambina is a Spa that needed to schedule their dates. In order to create this app I collab with my teammate Shakira Contreras. The architecture of the app was developed by her while I developed the interactivity.",
-        "github": "Watch this project in GitHub",
+        "github": "Watch this project on GitHub",
         "description": "Since this was my first project using Vue, I was responsible for studying the fundamentals of this framework in order to comprehend the Web App  & finally add the interactivity. Warning: Due to this is a private App is not possible to show the github link neither the live web.",
         "author": "Author: ",
         "collab": "Collaborator: "
@@ -41,35 +41,35 @@
       "figram": {
         "title": "figram",
         "short_description": "Login credentials: 'user: miduga@gmail.com' 'password: test'. \n Figram is a mobile SPA instagram clone created in order to learn tools like ReactJs, styled components, API consumption with GraphQL & Vite.",
-        "github": "Watch this project in GitHub",
+        "github": "Watch this project on GitHub",
         "description": "In order to develop this project it was used a prebuild API made by Platzi team. this app also has functionalities: like photos, sign in, log in, log out, watch favorite photos & select the pet by category.",
         "author": "Author: "
       },
       "figuitars": {
         "title": "Figuitars",
         "short_description": "Login credentials: 'password: asdf'. \n Figuitars is an E-commerce web template developed in shopify's platform in order to learn Liquid programming language & use it with HTML, CSS & JavaScript for development/customizing online stores.",
-        "github": "Watch this project in GitHub",
+        "github": "Watch this project on GitHub",
         "description": "This project was developed with Liquid Programming Language combined with HTML, CSS & Javascript. My personal goal with this project is to show my passion about music & my favorite musical instrument: The Guitar",
         "author": "Author: "
       },
       "mystarwars": {
         "title": "My Star Wars",
         "short_description": "Star Wars is one of my favorite sagas. What is better than practice your skills while you do something that you like?. This is one of my first projects developed by using HTML, SASS, Vanila JavaScript & Weboack.",
-        "github": "Watch this project in GitHub",
+        "github": "Watch this project on GitHub",
         "description": "The API used for the development of this project was SWAPI, the star wars API so I could get information from characters, planets, films, vehicles & starships. I used Webpack as a module bundler & hydrated the index.html file by using Vanila JS like creating a way to simulate the React behavior. Finally I used Sass preprocessor to add the styles & make the development faster.",
         "author": "Author: "
       },
       "fitimer": {
         "title": "Fitimer",
         "short_description": "Fitimer it's a timer developed by using HTML, SASS & JavaScript created in order to improve my skills with JavaScript.",
-        "github": "Watch this project in GitHub",
+        "github": "Watch this project on GitHub",
         "description": "In order to develop this project I focused on the timer functionality by using the JavaScript Object 'Date'. Then I created the functionality for every single button",
         "author": "Author: "
       },
       "paintit": {
         "title": "Paint It",
         "short_description": "Paint It is my first project developed by using HTML, CSS & JavaScript, then I upgrade it with other techologies like SASS & Webpack.",
-        "github": "Watch this project in GitHub",
+        "github": "Watch this project on GitHub",
         "description": "In order to develop this project I used the JavaScript canvas, DOM references & event management for functionalities.",
         "author": "Author: "
       }
@@ -113,8 +113,5 @@
       "message": "Message",
       "send": "Send"
     }
-  },
-  "projects": {
-
   }
 }

@@ -35,7 +35,7 @@ const ProjectPageInfo: React.FC<Props> = ({ info, dictionary }) => {
           {
             link === 'disabled' ?
               <button className='w-[45%] p-4 bg-gray-500 text-primary text-center text-xl cursor-auto'>{dictionary.watchLive}</button>
-              : <Link href={link || ""} target='_blank' className='w-[45%] my-2 p-4 bg-main text-center text-xl'>{dictionary.watchLive}</Link>
+              : <Link href={link || ""} target='_blank' className='w-[45%] my-2 p-4 bg-main text-text text-center text-xl'>{dictionary.watchLive}</Link>
           }
         </div>
       </main>

@@ -21,9 +21,14 @@ const MobileHeader = ({ dictionary }: { dictionary: Header }) => {
         (pathname.length <= 3) ?
           <BurgerMenu dictionary={dictionary.menu} />
           : (
-            <Link href={`/`} className='flex justify-center items-center'>
-              <FigureImage size={9} image={image.src}/>
-            </Link>
+            <nav className='flex items-center gap-2 text-text'>
+              <Link href={`/`} className='flex justify-center items-center'>
+                <FigureImage size={9} image={image.src}/>
+              </Link>
+              <Link href={`/`} className='hover:text-main duration-150'>
+                Home
+              </Link>
+            </nav>
           )
       }
       <div className='flex items-center gap-4 z-0'>

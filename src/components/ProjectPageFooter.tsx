@@ -3,6 +3,7 @@ import Link from 'next/link'
 
 import Project from '@/types/ProjectTypes'
 import { Portfolio } from '@/types/portfolioTypes'
+import GithubSolidIcon from '@/assets/icons/GithubSolidIcon'
 
 interface Props {
   info: Project | undefined
@@ -19,7 +20,7 @@ const ProjectPageFooter: React.FC<Props> = ({ info, dictionary }) => {
       {info?.collab && <h1 className='text-main font-bold'>{projectDictionary?.collab} {info?.collab}</h1>}
       {githubLink && (<span>
         <Link href={githubLink || ""} target='_blank' className='text-main underline md:no-underline md:hover:underline'>
-          {projectDictionary?.github}
+          <GithubSolidIcon /> {projectDictionary?.github}
         </Link>
       </span>)}
       <p>
