@@ -23,7 +23,9 @@ const Contact = ({ dictionary }: { dictionary: Contact }) => {
         </aside>
         <p className='col-span-12 px-4 text-center md:col-span-8 md:flex md:flex-col md:justify-center md:text-start md:text-2xl'>
           {dictionary.description}
-          <a href={'mailto:felixreyna48@gmail.com'} className='inline text-main hover:underline hover:duration-200'>{dictionary.email}</a>
+          <a href={'mailto:felixreyna48@gmail.com'} className='inline text-main hover:underline hover:duration-200'>
+            <strong>{dictionary.email}</strong>
+          </a>
         </p>
       </main>
     </section>

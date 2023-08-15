@@ -16,7 +16,7 @@ interface Props {
 const ProjectCard: React.FC<Props> = ({ dictionary, image, title, icons, details, link }) => {  
 
   return (
-    <figure className='relative col-span-12 md:col-span-6 lg:col-span-4 h-[80vh] bg-black'>
+    <figure className='relative col-span-12 h-[65vh] bg-black md:col-span-6 md:h-[80vh] lg:col-span-4'>
         <Image 
           src={image} 
           alt={title} 

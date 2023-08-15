@@ -17,12 +17,20 @@ const ProjectSlider: React.FC<Props> = ({ dictionary, image, title, icons, detai
 
   const router = useRouter()
 
-  const handleClick = () => {
-    link !== 'disabled' && router.push(`${link}`)
+  const handleDetailsButton = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+    event.preventDefault()
+    event.stopPropagation()
+    router.push(`/project/${details}`)
+  }
+
+  const handleWatchButton = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+    event.preventDefault()
+    event.stopPropagation()
+    router.push(`${link}`)
   }
 
   return (
-    <figure className='relative h-96 my-6 dark:bg-main bg-text' onClick={handleClick}>
+    <Link href={link !== 'disabled' ? `${link}` : `/project/${details}`} target='_blank' className='relative block h-96 my-6 dark:bg-main bg-text'>
       <Image 
         src={image} 
         alt={title} 
@@ -47,16 +55,16 @@ const ProjectSlider: React.FC<Props> = ({ dictionary, image, title, icons, detai
             </div>
           </div>
           <div className='relative flex justify-around text-text text-md'>
-            <Link href={`/project/${details}`} className='w-[45%] p-2 bg-primary text-center'>{dictionary.details}</Link>
+            <button onClick={handleDetailsButton} className='w-[45%] p-2 bg-primary text-center'>{dictionary.details}</button>
             {
               link === 'disabled' ?
                 <button className='w-[45%] p-2 bg-gray-500 text-primary text-center cursor-auto'>{dictionary.watchLive}</button>
-                : <Link href={link} target='_blank' className='w-[45%] p-2 bg-main text-center'>{dictionary.watchLive}</Link>
+                : <button onClick={handleWatchButton} className='w-[45%] p-2 bg-main text-center'>{dictionary.watchLive}</button>
             }
           </div>
           </div>
       </aside>
-    </figure>
+    </Link>
   )
 }
 
