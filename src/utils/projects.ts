@@ -1,6 +1,12 @@
 import Project from "@/types/ProjectTypes"
 
 // Images
+import fboImage from "@/assets/images/fbo.webp"
+import fbo1 from "@/assets/images/fbomovies/fbo-1.webp"
+import fbo2 from "@/assets/images/fbomovies/fbo-2.webp"
+import fbo3 from "@/assets/images/fbomovies/fbo-3.webp"
+import fbo4 from "@/assets/images/fbomovies/fbo-5.webp"
+
 import petvetImage from "@/assets/images/petvet.webp"
 import petvet1 from "@/assets/images/petvet/petvet-1.webp"
 import petvet2 from "@/assets/images/petvet/petvet-2.webp"
@@ -51,14 +57,25 @@ import VueIcon from "@/assets/icons/VueIcon"
 import VuetifyIcon from "@/assets/icons/VuetifyIcon"
 import StyledComponentsIcon from "@/assets/icons/StyledComponentsIcon"
 import GraphQlIcon from "@/assets/icons/GraphQlIcon"
+import TypeScriptIcon from "@/assets/icons/TypeScriptIcon"
 
 const projects: Project[] = [
+  {
+    id: "fbo",
+    name: "FBO Movies",
+    mainImage: fboImage,
+    images: [fbo1, fbo2, fbo3, fboImage, fbo4],
+    techStack: [NextIcon, ReactIcon, TypeScriptIcon, SassIcon],
+    link: "https://fbo-movies.vercel.app/",
+    githubLink: "https://github.com/Felix7447/fbo-movies",
+    author: "Felix Reyna"
+  },
   {
     id: "petvet",
     name: "petvet",
     mainImage: petvetImage,
     images: [petvet1, petvet2, petvetImage, petvet3, petvet4],
-    techStack: [NextIcon, TailwindIcon, JavaScriptIcon],
+    techStack: [NextIcon, ReactIcon, TailwindIcon, JavaScriptIcon],
     link: "https://petvet-two.vercel.app/",
     githubLink: "https://github.com/Felix7447/petvet",
     author: "Felix Reyna"

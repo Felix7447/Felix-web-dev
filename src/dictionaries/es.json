@@ -23,6 +23,13 @@
     "watchLive": "Ver Sitio",
     "button":"Mostrar Más",
     "projects": {
+      "fbo": {
+        "title": "FBO Movies",
+        "short_description": "FBO Movies es un clon de HBO Max realizado con el objetivo de pulir mis habilidades con TypeScript y aprender sobre fetching de datos específicamente con NextJS.",
+        "github": "Mira este proyecto en GitHub",
+        "description": "Para realizar este proyecto utilicé la API TMDB o The Movie Database donde pude obtener datos interesantes sobre las películas y series como fecha de lanzamiento, descripción e imágenes verticales y horizontales. También utilicé el framework NextJS para agregar sever side rendering y crear diferentes paginas con distintas categorías de películas y series.",
+        "author": "Autor: "
+      },
       "petvet": {
         "title": "petvet",
         "short_description": "Landing Page para la Médico Veterinario Marianella Tovar, fue creada con el objetivo de proporcionar a sus clientes una manera de acceso rápido a sus medios de contactos, servicios y mucho más. Para esta web se utilizaron tecnologías como NextJS, TailwindCss y por supuesto JavaScript!",
