@@ -23,6 +23,13 @@
     "watchLive": "Watch",
     "button":"Show More",
     "projects": {
+      "nurture": {
+        "title": "Nurture Parenting",
+        "short_description": "Login credentials: 'password: felix'. \n Nurture Parenting is an E-commerce developed in shopify with the Dawn theme as a base and customized by myself adding files, settings and styles. The website design was created on Figma and provided by Meraki Vision agency.",
+        "github": "Watch this project on GitHub",
+        "description": "To develop the present project I used the Figma design provided by Meraki where the goal was to use a shopify theme like Dawn and customize it to turn that design into a real website.",
+        "author": "Author: "
+      },
       "fbo": {
         "title": "FBO Movies",
         "short_description": "FBO Movies is an HBO Max clone developed in order to enhance my skills with TypeScript & learn more about Data Fetching on NextJS.",

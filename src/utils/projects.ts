@@ -1,6 +1,13 @@
 import Project from "@/types/ProjectTypes"
 
 // Images
+import nurtureImage from "@/assets/images/nurture.webp"
+import nurture1 from "@/assets/images/nurture/nurture2.webp"
+import nurture2 from "@/assets/images/nurture/nurture3.webp"
+import nurture3 from "@/assets/images/nurture/nurture4.webp"
+import nurture4 from "@/assets/images/nurture/nurture5.webp"
+import nurture5 from "@/assets/images/nurture/nurture6.webp"
+
 import fboImage from "@/assets/images/fbo.webp"
 import fbo1 from "@/assets/images/fbomovies/fbo-1.webp"
 import fbo2 from "@/assets/images/fbomovies/fbo-2.webp"
@@ -60,6 +67,15 @@ import GraphQlIcon from "@/assets/icons/GraphQlIcon"
 import TypeScriptIcon from "@/assets/icons/TypeScriptIcon"
 
 const projects: Project[] = [
+  {
+    id: "nurture",
+    name: "Nurture Parenting",
+    mainImage: nurtureImage,
+    images: [nurture1, nurture2, nurture3, nurture4, nurture5],
+    techStack: [ShopifyIcon, CssIcon, JavaScriptIcon],
+    link: "https://fi-nurture-parenting.myshopify.com/",
+    author: "Felix Reyna"
+  },
   {
     id: "fbo",
     name: "FBO Movies",
