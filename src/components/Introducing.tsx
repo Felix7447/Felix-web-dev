@@ -13,7 +13,7 @@ interface Props {
 
 const Introducing: React.FC<Props> = ({ dictionary }) => {
   return (
-    <section className='relative min-h-[90vh] flex flex-col justify-center items-center'>
+    <section id='Introducing' className='relative min-h-[90vh] flex flex-col justify-center items-center'>
       <Image 
         className='z-[-1] !h-[102%] impo opacity-40 object-cover' 
         src={bgImage.src} alt='bg-coding-man' 
