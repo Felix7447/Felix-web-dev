@@ -23,9 +23,9 @@ const ProjectPageInfo: React.FC<Props> = ({ info, dictionary }) => {
           <h3 className='text-3xl text-main font-bold'>{dictionary.techStack}</h3>
           <div className='flex gap-2'>
             {
-              techStack?.map((icon) => (
-                <span key={`icon-${icon}`} className='flex justify-center items-center'>
-                  {icon()}
+              techStack?.map((Icon) => (
+                <span key={`icon-${Icon}`} className='flex justify-center items-center'>
+                  <Icon />
                 </span>
               ))
             }

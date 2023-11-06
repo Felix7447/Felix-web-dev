@@ -54,7 +54,7 @@ const Portfolio: React.FC<Props> = ({ dictionary }) => {
         }
       </main>
       <footer className='w-full flex justify-center my-8' data-aos="fade-up">
-        <Link href={`${pathname}/portfolio`} className='p-4 dark:bg-main bg-text dark:text-text text-primary' >{dictionary.button}</Link>
+        <Link href={`${pathname}/portfolio`} className='p-4 dark:bg-main bg-text dark:text-text text-primary hover:!bg-text hover:!text-main duration-200' >{dictionary.button}</Link>
       </footer>
     </section>
   )
