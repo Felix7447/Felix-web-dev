@@ -8,7 +8,7 @@ interface Props {
   dictionary: Portfolio
   image: StaticImageData
   title: string
-  icons: (() => React.JSX.Element)[]
+  icons: React.FC[]
   details: string
   link?: any
 }
@@ -46,9 +46,9 @@ const ProjectSlider: React.FC<Props> = ({ dictionary, image, title, icons, detai
             <h3 className='text-lg'>{dictionary.techStack}</h3>
             <div className='flex gap-2 text-lg overflow-hidden'>
               {
-                icons.map((icon) => (
-                    <span key={`icon-${icon}`} className='flex justify-center items-center'>
-                      {icon()}
+                icons.map((Icon) => (
+                    <span key={`icon-${Icon}`} className='flex justify-center items-center'>
+                      <Icon />
                     </span>
                   ))  
               }

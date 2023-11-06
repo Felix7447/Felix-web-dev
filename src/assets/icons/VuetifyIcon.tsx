@@ -1,6 +1,6 @@
 import React from 'react'
 
-const VuetifyIcon = () => {
+const VuetifyIcon: React.FC = () => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width="48" height="36" viewBox="0 0 368 319" fill="none">
       <path d="M187.897 71.248L114.523 198.363L184 318.772L276.021 159.386L368 0H229.005L187.897 71.248Z" fill="#1697F6"/>

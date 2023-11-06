@@ -33,7 +33,7 @@ const Portfolio: React.FC<Props> = ({ dictionary }) => {
   }, [])
 
   return (
-    <section id='projects' className='dark:bg-secondary bg-main py-10' data-aos="fade-up">
+    <section id='projects' className='dark:bg-secondary bg-main py-10'>
       <h1 className='dark:text-main text-text text-3xl my-4 md:my-8 md:text-5xl text-center font-bold'>
         {dictionary.title}
       </h1>
@@ -53,7 +53,7 @@ const Portfolio: React.FC<Props> = ({ dictionary }) => {
           ))
         }
       </main>
-      <footer className='w-full flex justify-center my-8'>
+      <footer className='w-full flex justify-center my-8' data-aos="fade-up">
         <Link href={`${pathname}/portfolio`} className='p-4 dark:bg-main bg-text dark:text-text text-primary' >{dictionary.button}</Link>
       </footer>
     </section>

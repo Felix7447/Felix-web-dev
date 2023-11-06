@@ -6,7 +6,7 @@ export default interface Project {
   name: string
   mainImage: StaticImageData
   images: StaticImageData[]
-  techStack: (() => React.JSX.Element)[]
+  techStack: (React.FC)[]
   link: Url 
   githubLink?: string
   author: string
