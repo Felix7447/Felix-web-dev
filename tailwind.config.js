@@ -22,6 +22,16 @@ module.exports = {
       backgroundImage: {
         "coding-man-desk": "url('/public/coding-man_desktop.webp')",
       },
+      animation: {
+        'tremble': 'tremble 0.2s ease-in-out'
+      },
+      keyframes: {
+        tremble: {
+          '0%': { transform: 'translateX(0)'},
+          '25%': { transform: 'translateX(-5%)'},
+          '75%': { transform: 'translateX(5%)'},
+        }
+      }
     },
   },
   plugins: [],

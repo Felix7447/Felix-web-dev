@@ -23,7 +23,7 @@ const DownloadResumeButton: React.FC<Props> = ({ text }) => {
 
   return (
     <div className='my-8'>
-      <Link href={link} target='_blank' download className='p-4 bg-main text-text'>
+      <Link href={link} target='_blank' download className='p-4 bg-main text-text hover:bg-text hover:text-primary dark:hover:bg-primary dark:hover:text-text duration-500'>
         {text}
       </Link>
     </div>

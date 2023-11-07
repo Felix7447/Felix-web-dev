@@ -56,7 +56,7 @@ const MenuLink: React.FC<Props> = ({ link, text, color = 'main', handleMenu }) =
   }, [])  
 
   return (
-    <Link href={link} className={link.includes(activeSection ?? ' ') ? `dark:text-${color} text-primary` : `dark:hover:text-${color} hover:text-primary duration-200`} onClick={handleScroll}>
+    <Link href={link} className={link.includes(activeSection ?? ' ') ? `dark:text-${color} text-primary font-bold` : `dark:hover:text-${color} hover:text-primary hover:font-bold duration-200`} onClick={handleScroll}>
       {text}
     </Link>
   )

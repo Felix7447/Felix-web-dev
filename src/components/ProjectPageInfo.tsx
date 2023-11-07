@@ -24,7 +24,7 @@ const ProjectPageInfo: React.FC<Props> = ({ info, dictionary }) => {
           <div className='flex gap-2'>
             {
               techStack?.map((Icon) => (
-                <span key={`icon-${Icon}`} className='flex justify-center items-center'>
+                <span key={`icon-${Icon}`} className='flex justify-center items-center hover:animate-tremble'>
                   <Icon />
                 </span>
               ))
@@ -35,7 +35,7 @@ const ProjectPageInfo: React.FC<Props> = ({ info, dictionary }) => {
           {
             link === 'disabled' ?
               <button className='w-[45%] p-4 bg-gray-500 text-primary text-center text-xl cursor-auto'>{dictionary.watchLive}</button>
-              : <Link href={link || ""} target='_blank' className='w-[45%] my-2 p-4 bg-main text-text text-center text-xl'>{dictionary.watchLive}</Link>
+              : <Link href={link || ""} target='_blank' className='w-[45%] my-2 p-4 bg-main text-text text-center text-xl border-2 border-transparent hover:border-main hover:bg-text hover:text-primary dark:hover:bg-primary dark:hover:text-text duration-200'>{dictionary.watchLive}</Link>
           }
         </div>
       </main>

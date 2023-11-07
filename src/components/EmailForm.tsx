@@ -41,10 +41,10 @@ const EmailForm: React.FC<Props> = ({ form }) => {
 
   return (
     <form ref={formElement} onSubmit={handleSubmit}>
-      <input ref={email} name="email" type="email" placeholder={form.address} className='p-4 bg-inherit w-full outline-none border-b-2 border-primary placeholder:text-secondary md:w-2/5 md:mx-2'/>
-      <input ref={subject} name="subject" type="text" placeholder={form.subject} className='p-4 bg-inherit w-full outline-none border-b-2 border-primary placeholder:text-secondary md:w-2/5 md:mx-2'/>
-      <textarea ref={message} name="message" placeholder={form.message} className='block w-full p-4 bg-inherit outline-none placeholder:text-secondary border-b-2 border-primary md:max-w-[83%]'/>
-      <button type='submit' className='block w-full my-4 p-4 bg-secondary dark:text-main text-text md:w-1/2'>
+      <input ref={email} name="email" type="email" placeholder={form.address} className='p-4 bg-inherit w-full outline-none border-b-2 border-text dark:border-primary placeholder:text-text dark:placeholder:text-secondary md:w-2/5 md:mx-2'/>
+      <input ref={subject} name="subject" type="text" placeholder={form.subject} className='p-4 bg-inherit w-full outline-none border-b-2 border-text dark:border-primary placeholder:text-text dark:placeholder:text-secondary md:w-2/5 md:mx-2'/>
+      <textarea ref={message} name="message" placeholder={form.message} className='block w-full p-4 bg-inherit outline-none border-b-2 border-text dark:border-primary placeholder:text-text dark:placeholder:text-secondary md:max-w-[83%]'/>
+      <button type='submit' className='block w-full my-4 p-4 bg-text text-primary duration-100 border-2 border-transparent hover:border-text hover:bg-main hover:text-text dark:bg-secondary dark:text-text dark:hover:bg-main dark:hover:text-primary dark:hover:border-primary md:w-1/2 font-bold shadow-2xl'>
         {form.send}
       </button>
     </form>

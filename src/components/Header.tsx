@@ -40,7 +40,7 @@ const Header: React.FC<Props> = ({ dictionary }) => {
               </li>
             )) :
             <li>
-            <Link href={`/`} className='hover:text-main duration-150'>
+            <Link href={`/`} className='hover:text-primary hover:font-bold dark:hover:text-main duration-150'>
               Home
             </Link>
           </li>

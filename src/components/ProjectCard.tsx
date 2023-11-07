@@ -33,7 +33,7 @@ const ProjectCard: React.FC<Props> = ({ dictionary, image, title, icons, details
   }
 
   return (
-    <figure onClick={handleClick} data-aos="fade-up" data-aos-duration="500" className='group relative col-span-12 h-[65vh] bg-black cursor-pointer transition hover:border-4 hover:border-main hover:!scale-95 hover:z-10 md:col-span-6 md:h-[80vh] lg:col-span-4'>
+    <figure onClick={handleClick} data-aos="flip-left" data-aos-duration="1200" className='group relative col-span-12 h-[65vh] bg-black cursor-pointer transition hover:border-4 dark:hover:border-main hover:border-text hover:!scale-95 hover:z-10 md:col-span-6 md:h-[80vh] lg:col-span-4'>
         <Image 
           src={image} 
           alt={title} 
@@ -43,7 +43,7 @@ const ProjectCard: React.FC<Props> = ({ dictionary, image, title, icons, details
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       <aside className='opacity-0 group-hover:opacity-100 duration-500 relative z-10 h-full w-full bg-gradient-to-t from-black to-transparent'>
-        <div className='w-full absolute bottom-0 pb-4 px-4 dark:text-text text-text'>
+        <div className='w-full absolute bottom-0 pb-4 px-4 dark:text-text text-main'>
           <h1 className='capitalize font-bold text-3xl my-2'>{title}</h1>
           <div className='my-4'>
             <h3 className='text-2xl'>{dictionary.techStack}</h3>
@@ -58,7 +58,7 @@ const ProjectCard: React.FC<Props> = ({ dictionary, image, title, icons, details
             </div>
           </div>
           <div className='relative flex justify-around text-text mt-2'>
-            <Link href={`/project/${details}`} className='w-[45%] p-4 bg-primary text-center text-xl hover:bg-main duration-500'>
+            <Link href={`/project/${details}`} className='w-[45%] p-4 bg-text text-primary dark:bg-primary dark:text-text text-center text-xl hover:bg-main hover:text-text dark:hover:bg-main dark:hover:text-text duration-200'>
               {dictionary.details}
             </Link>
             {

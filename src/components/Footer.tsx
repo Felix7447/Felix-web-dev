@@ -39,18 +39,18 @@ const Footer = ({ dictionary }: { dictionary: Footer }) => {
         <p className='text-lg md:text-xl'>
           {dictionary.dataDescription}
         </p>
-        <div className="flex justify-start gap-10 my-4 md:my-8">
-          <figure className='w-16 h-16 rounded-md flex justify-center items-center bg-primary'>
+        <div className="flex justify-start gap-5 my-4 md:my-8">
+          <figure className='w-16 h-16 rounded-md flex justify-center items-center hover:animate-tremble'>
             <a href={`mailto:felixreyna48@gmail.com`}>
               <GmailIcon />
             </a>
           </figure>
-          <figure className='w-16 h-16 rounded-md flex justify-center items-center bg-primary'>
+          <figure className='w-16 h-16 rounded-md flex justify-center items-center hover:animate-tremble'>
             <Link href={`https://www.linkedin.com/in/felix-reyna/`} target='_blank'>
               <LinkedinIcon />
             </Link>
           </figure>
-          <figure className='w-16 h-16 rounded-md flex justify-center items-center bg-primary'>
+          <figure className='w-16 h-16 rounded-md flex justify-center items-center hover:animate-tremble'>
             <Link href={`https://github.com/Felix7447`} target='_blank'>
               <GithubIcon />
             </Link>
