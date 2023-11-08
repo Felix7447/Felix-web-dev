@@ -28,7 +28,8 @@ const Portfolio: React.FC<Props> = ({ dictionary }) => {
 
   useEffect(() => {
     AOS.init({
-      startEvent: 'DOMContentLoaded'
+      startEvent: 'DOMContentLoaded',
+      once: true
     })
   }, [])
 

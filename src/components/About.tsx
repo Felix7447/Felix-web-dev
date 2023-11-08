@@ -14,7 +14,8 @@ const About = ({ dictionary }: { dictionary: About }) => {
   useEffect(() => {
     AOS.init({
       startEvent: 'DOMContentLoaded',
-      duration: 1000
+      duration: 1000,
+      once: true
     })
   }, [])
 

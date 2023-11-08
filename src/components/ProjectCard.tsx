@@ -24,7 +24,8 @@ const ProjectCard: React.FC<Props> = ({ dictionary, image, title, icons, details
 
   useEffect(() => {
     AOS.init({
-      startEvent: 'DOMContentLoaded'
+      startEvent: 'DOMContentLoaded',
+      once: true
     })
   }, [])
 
@@ -37,12 +38,13 @@ const ProjectCard: React.FC<Props> = ({ dictionary, image, title, icons, details
         <Image 
           src={image} 
           alt={title} 
-          fill 
+          fill
           className='object-cover bg-black' 
           priority
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          quality='100'
         />
-      <aside className='opacity-0 group-hover:opacity-100 duration-500 relative z-10 h-full w-full bg-gradient-to-t from-black to-transparent'>
+      <aside className='md:opacity-0 group-hover:opacity-100 duration-500 relative z-10 h-full w-full bg-gradient-to-t from-black to-transparent'>
         <div className='w-full absolute bottom-0 pb-4 px-4 dark:text-text text-main'>
           <h1 className='capitalize font-bold text-3xl my-2'>{title}</h1>
           <div className='my-4'>

@@ -29,14 +29,19 @@ const SkillsSection = ({ dictionary }: { dictionary: Skills }) => {
 
   useEffect(() => {
     AOS.init({
-      startEvent: 'DOMContentLoaded'
+      startEvent: 'DOMContentLoaded',
+      once: true
     })
   }, [])
 
   return (
-    <section id='skills' className='py-10 dark:bg-primary bg-text dark:text-text text-primary' data-aos='fade-right'>
+    <section id='skills' className='py-10 dark:bg-primary bg-[#d9d9d9] dark:text-text text-primary'>
       <h1 className='text-3xl my-8 text-center font-bold text-main'>{dictionary.title}</h1>
-      <Swiper modules={[Autoplay]} spaceBetween={80} slidesPerView={'auto'} autoplay={{delay: 1500}} loop={true} breakpoints={{ 768: { slidesPerView: 3, autoplay: { delay: 2000 } }}} className='!px-8 md:!px-16 !my-8 !text-center hover:cursor-pointer'>
+      <Swiper modules={[Autoplay]} spaceBetween={80} slidesPerView={'auto'} autoplay={{delay: 1500}} loop={true} 
+        breakpoints={{ 768: { slidesPerView: 3, autoplay: { delay: 2000 } }}} 
+        className='!px-8 md:!px-16 !my-8 !text-center hover:cursor-pointer' 
+        data-aos='fade-up'
+      >
         <SwiperSlide>
           <figure className='h-20 flex justify-center items-center scale-150'>
             <HtmlIcon />
