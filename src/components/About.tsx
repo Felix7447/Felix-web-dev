@@ -20,7 +20,7 @@ const About = ({ dictionary }: { dictionary: About }) => {
   }, [])
 
   return (
-    <section id='about' className='max-w-7xl mx-auto grid grid-cols-12 min-h-screen dark:bg-primary bg-text py-10 px-8 lg:px-28 text-center'>
+    <section id='about' className='max-w-7xl mx-auto grid grid-cols-12 min-h-[90vh] dark:bg-primary bg-text py-10 px-8 lg:px-28 text-center'>
       <h1 className='col-span-12 self-center text-3xl text-main my-2 font-bold md:text-5xl'>
         {dictionary.title}
       </h1>
